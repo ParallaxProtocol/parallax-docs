@@ -6,7 +6,7 @@ In addition to the default opcode tracer and the built-in tracers, the Parallax 
 
 ## Custom Go tracing
 
-Custom tracers can also be made more performant by writing them in Go. The gain in performance mostly comes from the fact that the Parallax client doesn't need to interpret JS code and can execute native functions. The Parallax client comes with several built-in [native tracers](https://github.com/microstack-tech/parallax/tree/main/prl/tracers/native) which can serve as examples. Please note that unlike JS tracers, Go tracing scripts cannot be simply passed as an argument to the API. They will need to be added to and compiled with the rest of the Parallax client source code.
+Custom tracers can also be made more performant by writing them in Go. The gain in performance mostly comes from the fact that the Parallax client doesn't need to interpret JS code and can execute native functions. The Parallax client comes with several built-in [native tracers](https://github.com/ParallaxProtocol/parallax/tree/main/prl/tracers/native) which can serve as examples. Please note that unlike JS tracers, Go tracing scripts cannot be simply passed as an argument to the API. They will need to be added to and compiled with the rest of the Parallax client source code.
 
 In this section a simple native tracer that counts the number of opcodes will be covered. First follow the instructions to [clone and build](../../getting-started/installing-client) Parallax client from source code. Next save the following snippet as a `.go` file and add it to `eth/tracers/native`:
 
@@ -19,9 +19,9 @@ import (
     "sync/atomic"
     "time"
 
-    "github.com/microstack-tech/parallax/common"
-    "github.com/microstack-tech/parallax/core/vm"
-    "github.com/microstack-tech/parallax/prl/tracers"
+    "github.com/ParallaxProtocol/parallax/common"
+    "github.com/ParallaxProtocol/parallax/core/vm"
+    "github.com/ParallaxProtocol/parallax/prl/tracers"
 )
 
 func init() {
@@ -94,7 +94,7 @@ func (t *opcounter) Stop(err error) {
 }
 ```
 
-Every method of the [EVMLogger interface](https://pkg.go.dev/github.com/microstack-tech/parallax/core/vm#EVMLogger) needs to be implemented (even if empty). Key parts to notice are the `init()` function which registers the tracer in the Parallax client, the `CaptureState` hook where the opcode counts are incremented and `GetResult` where the result is serialized and delivered. Note that the constructor takes in a `cfg json.RawMessage`. This will be filled with a JSON object that user provides to the tracer to pass in optional config fields.
+Every method of the [EVMLogger interface](https://pkg.go.dev/github.com/ParallaxProtocol/parallax/core/vm#EVMLogger) needs to be implemented (even if empty). Key parts to notice are the `init()` function which registers the tracer in the Parallax client, the `CaptureState` hook where the opcode counts are incremented and `GetResult` where the result is serialized and delivered. Note that the constructor takes in a `cfg json.RawMessage`. This will be filled with a JSON object that user provides to the tracer to pass in optional config fields.
 
 To test out this tracer the source is first compiled with `make prlx`. Then in the console it can be invoked through the usual API methods by passing in the name it was registered under:
 

@@ -111,10 +111,10 @@ or
 {"jsonrpc":"2.0","id":1,"error":{"code":-32000,"message":"Request denied"}}
 ```
 
-Apart from listing accounts, a *request* can be submitted to create a new account, signing transactions and data or recovering signatures. The available methods are documented in the Clef [External API Spec](https://github.com/microstack-tech/parallax/tree/main/cmd/clef#external-api-1) and the [External API Changelog](https://github.com/microstack-tech/parallax/blob/main/cmd/clef/extapi_changelog.md).
+Apart from listing accounts, a *request* can be submitted to create a new account, signing transactions and data or recovering signatures. The available methods are documented in the Clef [External API Spec](https://github.com/ParallaxProtocol/parallax/tree/main/cmd/clef#external-api-1) and the [External API Changelog](https://github.com/ParallaxProtocol/parallax/blob/main/cmd/clef/extapi_changelog.md).
 
 <Note>
-*Note, the number of things that can be done from the External API is deliberately small to limit the power of remote calls as much as possible! Clef has an* [*Internal API*](https://github.com/microstack-tech/parallax/tree/main/cmd/clef#ui-api-1) *too for the UI (User Interface) which is much richer and can support custom interfaces on top. But that's out of scope here.*
+*Note, the number of things that can be done from the External API is deliberately small to limit the power of remote calls as much as possible! Clef has an* [*Internal API*](https://github.com/ParallaxProtocol/parallax/tree/main/cmd/clef#ui-api-1) *too for the UI (User Interface) which is much richer and can support custom interfaces on top. But that's out of scope here.*
 </Note>
 
 The example above used Clef completely independently of the Parallax client. However, by defining Clef as the signer when the Parallax client is started imposes Clef's `request` - `confirm` - `result` pattern to any interaction with the local Parallax node that touches accounts, including requests made using RPC or an attached Javascript console. To demonstrate this, the Parallax client can be started, with Clef as the signer:
@@ -498,7 +498,7 @@ t=2022-07-01T15:52:23+0300 lvl=info msg=SignData   api=signer type=request  meta
 t=2022-07-01T15:52:23+0300 lvl=info msg=SignData   api=signer type=response data=                                     error="Request denied"
 ```
 
-More examples, including a ruleset for a rate-limited window, are available on the [Clef GitHub](https://github.com/microstack-tech/parallax/blob/main/cmd/clef/rules.md#example-1-ruleset-for-a-rate-limited-window) and on the [Rules page](./rules).
+More examples, including a ruleset for a rate-limited window, are available on the [Clef GitHub](https://github.com/ParallaxProtocol/parallax/blob/main/cmd/clef/rules.md#example-1-ruleset-for-a-rate-limited-window) and on the [Rules page](./rules).
 
 ## Under the hood
 

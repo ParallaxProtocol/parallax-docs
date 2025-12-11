@@ -2,7 +2,7 @@
 title: 'Installing the Parallax Client'
 ---
 
-There are several ways to install the Parallax client, including via a package manager, downloading a pre-built bundle, running as a docker container or building from downloaded source code. On this page the various installation options are explained for several major operating systems. Users prioritizing ease of installation should choose to use a package manager or prebuilt bundle. Users prioritizing customization should build from source. It is important to run the latest version of the Parallax client because each release includes bug fixes and improvements over the previous versions. The stable releases are recommended for most users because they have been fully tested. A list of stable releases can be found [here](https://github.com/microstack-tech/parallax/releases). Instructions for updating existing Parallax installations are also provided in each section.
+There are several ways to install the Parallax client, including via a package manager, downloading a pre-built bundle, running as a docker container or building from downloaded source code. On this page the various installation options are explained for several major operating systems. Users prioritizing ease of installation should choose to use a package manager or prebuilt bundle. Users prioritizing customization should build from source. It is important to run the latest version of the Parallax client because each release includes bug fixes and improvements over the previous versions. The stable releases are recommended for most users because they have been fully tested. A list of stable releases can be found [here](https://github.com/ParallaxProtocol/parallax/releases). Instructions for updating existing Parallax installations are also provided in each section.
 
 ## Package managers
 
@@ -20,7 +20,7 @@ The following standalone bundles are available:
 
 Some archives contain only the Parallax client, while other archives containing the Parallax client and the various developer tools (clef, devp2p, abigen, bootnode, evm and rlpdump).
 
-The standalone bundles can be downloaded from the [Parallax client Releases](https://github.com/microstack-tech/parallax/releases) page. To update an existing installation, download and manually install the latest version.
+The standalone bundles can be downloaded from the [Parallax client Releases](https://github.com/ParallaxProtocol/parallax/releases) page. To update an existing installation, download and manually install the latest version.
 
 ## Docker container
 
@@ -30,10 +30,10 @@ Not yet available in Docker Hub.
 
 ### Linux and Mac
 
-The [Parallax client repository](https://github.com/microstack-tech/parallax) should be cloned locally. Then, the command `make prlx` configures everything for a temporary build and cleans up afterwards. This method of building only works on UNIX-like operating systems, and a Go installation is still required.
+The [Parallax client repository](https://github.com/ParallaxProtocol/parallax) should be cloned locally. Then, the command `make prlx` configures everything for a temporary build and cleans up afterwards. This method of building only works on UNIX-like operating systems, and a Go installation is still required.
 
 ```sh
-git clone https://github.com/microstack-tech/parallax.git
+git clone https://github.com/ParallaxProtocol/parallax.git
 cd parallax
 make prlx
 ```
@@ -61,11 +61,11 @@ C:\Windows\system32> choco install mingw
 Installing these packages sets up the path environment variables. To get the new path a new command prompt must be opened. To install the Parallax client, a Go workspace directory must first be created, then the Parallax source code can be created and built.
 
 ```sh
-C:\Users\xxx> mkdir src\github.com\microstack-tech
-C:\Users\xxx> git clone https://github.com/microstack-tech/parallax src\github.com\microstack-tech\parallax
-C:\Users\xxx> cd src\github.com\microstack-tech\parallax
-C:\Users\xxx\src\github.com\microstack-tech\parallax> go get -u -v golang.org/x/net/context
-C:\Users\xxx\src\github.com\microstack-tech\parallax> go install -v ./cmd/...
+C:\Users\xxx> mkdir src\github.com\ParallaxProtocol
+C:\Users\xxx> git clone https://github.com/ParallaxProtocol/parallax src\github.com\ParallaxProtocol\parallax
+C:\Users\xxx> cd src\github.com\ParallaxProtocol\parallax
+C:\Users\xxx\src\github.com\ParallaxProtocol\parallax> go get -u -v golang.org/x/net/context
+C:\Users\xxx\src\github.com\ParallaxProtocol\parallax> go install -v ./cmd/...
 ```
 
 ### FreeBSD
@@ -73,7 +73,7 @@ C:\Users\xxx\src\github.com\microstack-tech\parallax> go install -v ./cmd/...
 To build the Parallax client from source code on FreeBSD, the Parallax GitHub repository can be cloned into a local directory.
 
 ```sh
-git clone https://github.com/microstack-tech/parallax
+git clone https://github.com/ParallaxProtocol/parallax
 ```
 
 Then, the Go compiler can be used to build the Parallax client:

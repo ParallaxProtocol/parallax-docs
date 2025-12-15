@@ -274,12 +274,12 @@
       "anchors": [
         {
           "anchor": "Parallax website",
-          "href": "https://parallaxchain.org",
+          "href": "https://parallaxprotocol.org",
           "icon": "globe"
         },
         {
           "anchor": "Whitepaper",
-          "href": "https://parallaxchain.org/introduction/whitepaper",
+          "href": "https://parallaxprotocol.org/introduction/whitepaper",
           "icon": "newspaper"
         }
       ]

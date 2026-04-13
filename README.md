@@ -1,87 +1,43 @@
-# Parallax Core
+# Mintlify Starter Kit
 
-Reference Golang implementation of the **Parallax protocol**.
+Use the starter kit to get your docs deployed and ready to customize.
 
-> **Parallax** is a Proof-of-Work timechain protocol designed to merge the security model of Bitcoin with the programmability of the EVM. It combines Bitcoin’s fixed monetary rules with Ethereum’s virtual machine to deliver a scarce, decentralized, and programmable timechain.
+Click the green **Use this template** button at the top of this repo to copy the Mintlify starter kit. The starter kit contains examples with
 
----
+- Guide pages
+- Navigation
+- Customizations
+- API reference pages
+- Use of popular components
 
-## More on Parallax
+**[Follow the full quickstart guide](https://starter.mintlify.com/quickstart)**
 
-- Website: [https://parallaxprotocol.org](https://parallaxprotocol.org)
-- Whitepaper: [https://parallaxprotocol.org/introduction/whitepaper](https://parallaxprotocol.org/introduction/whitepaper)
-- The Parallax Doctrine: [https://github.com/ParallaxProtocol/parallax-doctrine](https://github.com/ParallaxProtocol/parallax-doctrine)
-- Beginner Guides: [https://docs.parallaxprotocol.org/guides](https://docs.parallaxprotocol.org/guides)
-- Technical Documentation: [https://docs.parallaxprotocol.org](https://docs.parallaxprotocol.org)
+## Development
 
----
+Install the [Mintlify CLI](https://www.npmjs.com/package/mint) to preview your documentation changes locally. To install, use the following command:
 
-## Building from Source
-
-Parallax requires **Go 1.26+** and a C compiler.
-
-```bash
-make prlx
+```
+npm i -g mint
 ```
 
-Build the full suite:
+Run the following command at the root of your documentation, where your `docs.json` is located:
 
-```bash
-make all
+```
+mint dev
 ```
 
----
+View your local preview at `http://localhost:3000`.
 
-## Executables
+## Publishing changes
 
-Binaries are located under `build/bin`:
+Install our GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app) to propagate changes from your repo to your deployment. Changes are deployed to production automatically after pushing to the default branch.
 
-| Command        | Description |
-|----------------|-------------|
-| **`prlx`** | Main CLI client. Runs full, archive, or light nodes; exposes JSON-RPC over HTTP, WS, and IPC. |
-| `clef`         | Stand-alone signer for secure account operations. |
-| `devp2p`       | Networking utilities to inspect and interact at the P2P layer. |
-| `abigen`       | Generates type-safe Go bindings from contract ABIs. |
-| `pvm`          | Execute and debug PVM bytecode snippets in isolation. |
-| `rlpdump`      | Decode RLP structures into a human-readable form. |
+## Need help?
 
----
+### Troubleshooting
 
-## Running a Node
+- If your dev environment isn't running: Run `mint update` to ensure you have the most recent version of the CLI.
+- If a page loads as a 404: Make sure you are running in a folder with a valid `docs.json`.
 
-Interactive console:
-
-```bash
-./prlx console
-```
-
-### Hardware Recommendations
-
-- **Minimum**: 2 cores, 4 GB RAM, 250 GB SSD, 8 Mbps
-- **Recommended**: 4+ cores, 8 GB RAM, 500 TB SSD, 25+ Mbps
-
----
-
-## Contribution
-
-We welcome contributions aligned with **neutrality, openness, and decentralization**.
-
-1. Fork the repo
-2. Implement your changes
-3. Open a PR against `main`
-
-**Guidelines**
-
-- Format with `gofmt`; document public symbols following Go conventions.  
-- Keep commits focused; prefix messages with affected packages (e.g., `prlx, rpc:`).  
-
----
-
-## License
-
-- **Library code** (`/` excluding `cmd/`): [LGPL v3](https://www.gnu.org/licenses/lgpl-3.0.en.html)  
-- **Executables** (`/cmd/*`): [GPL v3](https://www.gnu.org/licenses/gpl-3.0.en.html)
-
-### Attribution Notice
-
-Parallax Core is a derivative work of [go-ethereum](https://github.com/ethereum/go-ethereum) originally developed by the go-ethereum authors and licensed under the GNU LGPL-3.0.
+### Resources
+- [Mintlify documentation](https://mintlify.com/docs)

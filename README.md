@@ -1,5 +1,8 @@
 # Mintlify Starter Kit
 
+> [!IMPORTANT]
+> **This repository is archived.** The Parallax documentation now lives in the main Parallax client repository, under the [`/docs`](https://github.com/ParallaxProtocol/parallax/tree/main/docs) directory.
+
 Use the starter kit to get your docs deployed and ready to customize.
 
 Click the green **Use this template** button at the top of this repo to copy the Mintlify starter kit. The starter kit contains examples with

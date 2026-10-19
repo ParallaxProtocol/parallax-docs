@@ -395,11 +395,37 @@
         "tab": "Hashwarp",
         "groups": [
           {
-            "group": "Hashwarp",
+            "group": "Get Started",
             "pages": [
               "hashwarp/getting-started",
               "hashwarp/pool-mining",
-              "hashwarp/troubleshooting"
+              "hashwarp/solo-mining",
+              "hashwarp/rig-os"
+            ]
+          },
+          {
+            "group": "Using Hashwarp",
+            "pages": [
+              "hashwarp/configuration",
+              "hashwarp/gpus-and-tuning",
+              "hashwarp/overclocking",
+              "hashwarp/output-and-logs",
+              "hashwarp/safety"
+            ]
+          },
+          {
+            "group": "Monitoring",
+            "pages": [
+              "hashwarp/dashboard",
+              "hashwarp/api"
+            ]
+          },
+          {
+            "group": "Reference",
+            "pages": [
+              "hashwarp/options",
+              "hashwarp/troubleshooting",
+              "hashwarp/upgrading"
             ]
           }
         ]

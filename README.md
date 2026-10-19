@@ -32,12 +32,12 @@ Each top-level folder is one tab of the site and changes on its own schedule:
 
 | Folder                  | Tab                        | Versioned |
 | ----------------------- | -------------------------- | --------- |
-| `protocol/`             | Protocol Specification     | No        |
-| `client/`               | Parallax Client            | Yes: the current major (v2), unversioned paths |
-| `client/v1.x/`          | Parallax Client            | Yes: archived, frozen |
+| `guides/`               | Beginner Guides            | No        |
 | `parallax-wallet/`      | Parallax Wallet            | No        |
 | `hashwarp/`             | Hashwarp                   | No        |
-| `guides/`               | Beginner Guides            | No        |
+| `client/`               | Parallax Client            | Yes: the current major (v2), unversioned paths |
+| `client/v1.x/`          | Parallax Client            | Yes: archived, frozen |
+| `protocol/`             | Protocol Specification     | No        |
 | `exchange-integration/` | Exchange Integration Guide | No        |
 
 Shared assets stay at the root: `index.mdx`, `logo/`, `images/`,

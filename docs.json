@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Parallax Technical Documentation",
+  "name": "Parallax Docs",
   "colors": {
     "primary": "#00804a",
     "light": "#19e68c",
@@ -15,106 +15,125 @@
           "anchor": "Parallax website",
           "href": "https://parallaxprotocol.org",
           "icon": "globe"
-        },
-        {
-          "anchor": "Whitepaper",
-          "href": "https://parallaxprotocol.org/parallax.pdf",
-          "icon": "newspaper"
         }
       ]
     },
     "tabs": [
       {
-        "tab": "Protocol Specification",
+        "tab": "Home",
+        "pages": [
+          "index"
+        ]
+      },
+      {
+        "tab": "Beginner Guides",
         "groups": [
           {
-            "group": "Foundational Topics",
+            "group": "Parallax Client",
             "pages": [
-              "protocol/foundational-topics/introduction-to-parallax",
-              "protocol/foundational-topics/introduction-to-lax",
-              "protocol/foundational-topics/introduction-to-dapps",
-              "protocol/foundational-topics/web2-vs-web3",
-              "protocol/foundational-topics/accounts",
-              "protocol/foundational-topics/transactions",
-              "protocol/foundational-topics/blocks",
-              {
-                "group": "Parallax Virtual Machine (PVM)",
-                "pages": [
-                  "protocol/foundational-topics/pvm/overview",
-                  "protocol/foundational-topics/pvm/opcodes"
-                ]
-              },
-              "protocol/foundational-topics/gas-and-fees",
-              "protocol/foundational-topics/nodes-and-clients",
-              {
-                "group": "Consensus Mechanisms",
-                "pages": [
-                  "protocol/foundational-topics/consensus/overview",
-                  "protocol/foundational-topics/consensus/proof-of-work",
-                  "protocol/foundational-topics/consensus/mining",
-                  {
-                    "group": "Mining Algorithms",
-                    "pages": [
-                      "protocol/foundational-topics/consensus/algorithms/overview",
-                      "protocol/foundational-topics/consensus/algorithms/dagger-hashimoto",
-                      "protocol/foundational-topics/consensus/algorithms/ethash",
-                      "protocol/foundational-topics/consensus/algorithms/xhash"
-                    ]
-                  }
-                ]
-              }
+              "guides/client/introduction",
+              "guides/client/setup"
             ]
           },
           {
-            "group": "Parallax Stack",
+            "group": "Wallets",
             "pages": [
-              "protocol/parallax-stack/introduction-stack",
-              "protocol/parallax-stack/smart-contracts",
-              "protocol/parallax-stack/development-networks",
-              "protocol/parallax-stack/development-frameworks",
-              {
-                "group": "Parallax Client APIs",
-                "pages": [
-                  "protocol/parallax-stack/apis/javascript-apis",
-                  "protocol/parallax-stack/apis/json-rpc"
-                ]
-              },
-              "protocol/parallax-stack/storage",
-              "protocol/parallax-stack/ides"
+              "guides/wallets/accounts",
+              "guides/wallets/metamask",
+              "guides/wallets/send-and-reveive",
+              "guides/wallets/explorer",
+              "guides/wallets/keep-safe"
             ]
           },
           {
-            "group": "Advanced",
+            "group": "Mining",
             "pages": [
-              "protocol/advanced/bridges",
-              {
-                "group": "Standards",
-                "pages": [
-                  "protocol/advanced/standards/overview",
-                  "protocol/advanced/standards/erc-20",
-                  "protocol/advanced/standards/erc-721"
-                ]
-              },
-              "protocol/advanced/oracles",
-              {
-                "group": "Networking Layer",
-                "pages": [
-                  "protocol/advanced/networking/overview",
-                  "protocol/advanced/networking/addresses",
-                  "protocol/advanced/networking/discovery",
-                  "protocol/advanced/networking/tor",
-                  "protocol/advanced/networking/peer-management"
-                ]
-              },
-              {
-                "group": "Data Structures & Encoding",
-                "pages": [
-                  "protocol/advanced/data-structures/overview",
-                  "protocol/advanced/data-structures/patricia-trie",
-                  "protocol/advanced/data-structures/rlp",
-                  "protocol/advanced/data-structures/secret-storage"
-                ]
-              }
+              "guides/mining/introduction",
+              "guides/mining/cpu"
+            ]
+          },
+          {
+            "group": "AI Assistants",
+            "pages": [
+              "guides/ai/parallax-mcp"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Parallax Wallet",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "parallax-wallet/introduction",
+              "parallax-wallet/installing",
+              "parallax-wallet/accounts"
+            ]
+          },
+          {
+            "group": "Using the Wallet",
+            "pages": [
+              "parallax-wallet/your-node",
+              "parallax-wallet/send-and-receive",
+              "parallax-wallet/contacts",
+              "parallax-wallet/messages",
+              "parallax-wallet/hardware-wallets",
+              "parallax-wallet/offline-signing"
+            ]
+          },
+          {
+            "group": "Settings & Safety",
+            "pages": [
+              "parallax-wallet/settings",
+              "parallax-wallet/security",
+              "parallax-wallet/ai-assistants"
+            ]
+          },
+          {
+            "group": "Reference",
+            "pages": [
+              "parallax-wallet/troubleshooting",
+              "parallax-wallet/updating"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Hashwarp",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "hashwarp/getting-started",
+              "hashwarp/pool-mining",
+              "hashwarp/solo-mining",
+              "hashwarp/rig-os"
+            ]
+          },
+          {
+            "group": "Using Hashwarp",
+            "pages": [
+              "hashwarp/configuration",
+              "hashwarp/gpus-and-tuning",
+              "hashwarp/overclocking",
+              "hashwarp/output-and-logs",
+              "hashwarp/safety"
+            ]
+          },
+          {
+            "group": "Monitoring",
+            "pages": [
+              "hashwarp/dashboard",
+              "hashwarp/api"
+            ]
+          },
+          {
+            "group": "Reference",
+            "pages": [
+              "hashwarp/options",
+              "hashwarp/troubleshooting",
+              "hashwarp/upgrading"
             ]
           }
         ]
@@ -392,114 +411,96 @@
         ]
       },
       {
-        "tab": "Parallax Wallet",
+        "tab": "Protocol Specification",
         "groups": [
           {
-            "group": "Get Started",
+            "group": "Foundational Topics",
             "pages": [
-              "parallax-wallet/introduction",
-              "parallax-wallet/installing",
-              "parallax-wallet/accounts"
+              "protocol/foundational-topics/introduction-to-parallax",
+              "protocol/foundational-topics/introduction-to-lax",
+              "protocol/foundational-topics/introduction-to-dapps",
+              "protocol/foundational-topics/web2-vs-web3",
+              "protocol/foundational-topics/accounts",
+              "protocol/foundational-topics/transactions",
+              "protocol/foundational-topics/blocks",
+              {
+                "group": "Parallax Virtual Machine (PVM)",
+                "pages": [
+                  "protocol/foundational-topics/pvm/overview",
+                  "protocol/foundational-topics/pvm/opcodes"
+                ]
+              },
+              "protocol/foundational-topics/gas-and-fees",
+              "protocol/foundational-topics/nodes-and-clients",
+              {
+                "group": "Consensus Mechanisms",
+                "pages": [
+                  "protocol/foundational-topics/consensus/overview",
+                  "protocol/foundational-topics/consensus/proof-of-work",
+                  "protocol/foundational-topics/consensus/mining",
+                  {
+                    "group": "Mining Algorithms",
+                    "pages": [
+                      "protocol/foundational-topics/consensus/algorithms/overview",
+                      "protocol/foundational-topics/consensus/algorithms/dagger-hashimoto",
+                      "protocol/foundational-topics/consensus/algorithms/ethash",
+                      "protocol/foundational-topics/consensus/algorithms/xhash"
+                    ]
+                  }
+                ]
+              }
             ]
           },
           {
-            "group": "Using the Wallet",
+            "group": "Parallax Stack",
             "pages": [
-              "parallax-wallet/your-node",
-              "parallax-wallet/send-and-receive",
-              "parallax-wallet/contacts",
-              "parallax-wallet/messages",
-              "parallax-wallet/hardware-wallets",
-              "parallax-wallet/offline-signing"
+              "protocol/parallax-stack/introduction-stack",
+              "protocol/parallax-stack/smart-contracts",
+              "protocol/parallax-stack/development-networks",
+              "protocol/parallax-stack/development-frameworks",
+              {
+                "group": "Parallax Client APIs",
+                "pages": [
+                  "protocol/parallax-stack/apis/javascript-apis",
+                  "protocol/parallax-stack/apis/json-rpc"
+                ]
+              },
+              "protocol/parallax-stack/storage",
+              "protocol/parallax-stack/ides"
             ]
           },
           {
-            "group": "Settings & Safety",
+            "group": "Advanced",
             "pages": [
-              "parallax-wallet/settings",
-              "parallax-wallet/security",
-              "parallax-wallet/ai-assistants"
-            ]
-          },
-          {
-            "group": "Reference",
-            "pages": [
-              "parallax-wallet/troubleshooting",
-              "parallax-wallet/updating"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Hashwarp",
-        "groups": [
-          {
-            "group": "Get Started",
-            "pages": [
-              "hashwarp/getting-started",
-              "hashwarp/pool-mining",
-              "hashwarp/solo-mining",
-              "hashwarp/rig-os"
-            ]
-          },
-          {
-            "group": "Using Hashwarp",
-            "pages": [
-              "hashwarp/configuration",
-              "hashwarp/gpus-and-tuning",
-              "hashwarp/overclocking",
-              "hashwarp/output-and-logs",
-              "hashwarp/safety"
-            ]
-          },
-          {
-            "group": "Monitoring",
-            "pages": [
-              "hashwarp/dashboard",
-              "hashwarp/api"
-            ]
-          },
-          {
-            "group": "Reference",
-            "pages": [
-              "hashwarp/options",
-              "hashwarp/troubleshooting",
-              "hashwarp/upgrading"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Beginner Guides",
-        "groups": [
-          {
-            "group": "Parallax Client",
-            "pages": [
-              "guides/client/introduction",
-              "guides/client/setup"
-            ]
-          },
-          {
-            "group": "Wallets",
-            "pages": [
-              "guides/wallets/accounts",
-              "guides/wallets/metamask",
-              "guides/wallets/send-and-reveive",
-              "guides/wallets/explorer",
-              "guides/wallets/keep-safe"
-            ]
-          },
-          {
-            "group": "Mining",
-            "pages": [
-              "guides/mining/introduction",
-              "guides/mining/cpu"
-            ]
-          },
-          {
-            "group": "AI Assistants",
-            "pages": [
-              "guides/ai/parallax-mcp"
+              "protocol/advanced/bridges",
+              {
+                "group": "Standards",
+                "pages": [
+                  "protocol/advanced/standards/overview",
+                  "protocol/advanced/standards/erc-20",
+                  "protocol/advanced/standards/erc-721"
+                ]
+              },
+              "protocol/advanced/oracles",
+              {
+                "group": "Networking Layer",
+                "pages": [
+                  "protocol/advanced/networking/overview",
+                  "protocol/advanced/networking/addresses",
+                  "protocol/advanced/networking/discovery",
+                  "protocol/advanced/networking/tor",
+                  "protocol/advanced/networking/peer-management"
+                ]
+              },
+              {
+                "group": "Data Structures & Encoding",
+                "pages": [
+                  "protocol/advanced/data-structures/overview",
+                  "protocol/advanced/data-structures/patricia-trie",
+                  "protocol/advanced/data-structures/rlp",
+                  "protocol/advanced/data-structures/secret-storage"
+                ]
+              }
             ]
           }
         ]

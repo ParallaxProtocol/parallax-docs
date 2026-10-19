@@ -1,9 +1,8 @@
 ---
-title: "Parallax Technical Documentation"
-description: "Welcome to the official Parallax documentation. Learn how Parallax works, how to participate in the network, and how to build on top of it."
+title: "Welcome to Parallax"
+sidebarTitle: "Welcome"
+description: "The official Parallax documentation: learn how Parallax works, how to take part in the network, and how to build on top of it."
 ---
-
-# Welcome to Parallax
 
 Parallax is a decentralized, EVM-compatible blockchain protocol inspired by Bitcoin’s time-tested economic model and secured by XHash Proof of Work.  
 
@@ -11,57 +10,67 @@ This documentation is your primary resource to understand how Parallax works, ho
 
 ---
 
-## Documentation Structure
+## Where to start
 
-Our documentation is divided into six sections. Each changes on its own schedule, and only the client documentation is versioned.
+<CardGroup cols={2}>
+  <Card title="Beginner Guides" icon="compass" href="/guides/client/introduction">
+    New to Parallax? Step-by-step guides to wallets, running a node, CPU mining and AI assistants.
+  </Card>
+  <Card title="Parallax Wallet" icon="wallet" href="/parallax-wallet/introduction">
+    The desktop wallet with a full node built in: hold, send and receive LAX on Windows, macOS or Linux.
+  </Card>
+  <Card title="Hashwarp" icon="microchip" href="/hashwarp/getting-started">
+    The official GPU miner for XHash: a first run, pools, solo mining, tuning and monitoring.
+  </Card>
+  <Card title="Parallax Client" icon="server" href="/client/getting-started/introduction">
+    Install, configure and run a node from the command line, use its JSON-RPC, and build on it.
+  </Card>
+  <Card title="Protocol Specification" icon="book-open" href="/protocol/foundational-topics/introduction-to-parallax">
+    How Parallax works: accounts, transactions, blocks, the PVM, consensus, XHash and networking.
+  </Card>
+  <Card title="Exchange Integration Guide" icon="building-columns" href="/exchange-integration/overview">
+    What an exchange needs to list LAX: nodes, deposits, withdrawals, confirmations and the status API.
+  </Card>
+</CardGroup>
 
-### 📖 Protocol Specification
+Only the client documentation is versioned, one version per major release: the
+current one is `v2.x`, and `v1.x` is archived. Everything else always describes
+the current network and software.
 
-The protocol itself: its foundations, architecture, and advanced concepts. Start here to understand **what Parallax is** and **why it works the way it does**.
+---
 
-- **Foundational Topics**: Introduction to Parallax, LAX, accounts, blocks, transactions, gas and fees, and the Parallax Virtual Machine (PVM).  
-- **Parallax Stack**: Components that make up the network, how nodes communicate, and how the stack fits together.  
-- **Advanced**: Bridges, token standards, oracles, networking and the data structures used in the Parallax protocol.
+## Network at a glance
 
-### 💻 Parallax Client
+| | |
+|---|---|
+| **Coin** | LAX, 18 decimals |
+| **Chain ID** | `2110` |
+| **Consensus** | Proof of work, [XHash](/protocol/foundational-topics/consensus/algorithms/xhash) |
+| **Block time** | 10 minutes, with difficulty adjusted every block (ASERT) |
+| **Block reward** | 50 LAX, halving every 210,000 blocks (about 4 years) |
+| **Supply cap** | 21,000,000 LAX. No premine |
+| **EVM** | Berlin. Legacy and access-list transactions, no EIP-1559 |
+| **Public RPC** | `https://rpc.parallaxprotocol.org`, for testing. Run your own node for anything serious |
+| **Block explorer** | [explorer.parallaxprotocol.org](https://explorer.parallaxprotocol.org) |
+| **Network status** | [status.parallaxprotocol.org](https://status.parallaxprotocol.org) |
 
-The official Parallax Client implementation: everything you need to install, configure, and run your own node. It has one version of its documentation per major release, `v2.x` for the current one and an archived `v1.x`.
+The full list, with address and transaction formats, is in the
+[Network reference](/exchange-integration/network-reference). To add Parallax
+to MetaMask, see [Setting up MetaMask](/guides/wallets/metamask).
 
-- **Getting Started**: Hardware requirements, installation, and first steps.  
-- **Fundamentals**: Command-line options, security, sync modes, account management, databases, backups, logs, pruning, config files, and more.  
-- **Interacting with the Client**: JSON-RPC server and namespaces, JavaScript console, GraphQL server, and contract interaction.  
-- **Developers**: Guides for dApp developers, client developers, PVM tracing, and contributing to the codebase.  
-- **Monitoring & Tools**: Node health, metrics, and helper utilities.  
+---
 
-### 👛 Parallax Wallet
+## Get help
 
-Parallax Wallet, the desktop wallet with a full node built in: installing it, accounts, sending and receiving, your node, contacts, signing messages, hardware wallets, offline signing, settings, AI assistants and troubleshooting.
-
-### ⛏️ Hashwarp
-
-Hashwarp, the official GPU miner for XHash: setup, pool mining and troubleshooting.
-
-### 🧭 Beginner Guides
-
-Step-by-step guides for running a node, wallets, CPU mining and AI assistants.
-
-### 🏦 Exchange Integration Guide
-
-What an exchange needs to list LAX: running a node, deposits, withdrawals, confirmations and the network status API.
+- **Ask an AI assistant**: the [Parallax MCP server](/guides/ai/parallax-mcp) lets Claude and other assistants search these docs and read the chain.
+- **Check the network**: [status.parallaxprotocol.org](https://status.parallaxprotocol.org) shows whether blocks, nodes and mining are healthy.
+- **Report a problem**: open an issue in the right repository of the [ParallaxProtocol GitHub organization](https://github.com/ParallaxProtocol).
+- **Follow the project**: [@prlxchain on X](https://x.com/prlxchain).
 
 ---
 
 ## Contributing
 
-Parallax is an open-source project. Whether you’re a developer, miner, researcher, or community builder, your contributions help strengthen the ecosystem.  
-Check out our [GitHub organization](https://github.com/ParallaxProtocol) to get involved.
-
----
-
-## Next Steps
-
-- Start with the **Foundational Topics** under *Protocol Specification* to learn the basics.  
-- Head to the **Parallax Client** section if you want to run a node or interact directly with the client.  
-- Explore the **Developers** resources if you’re building dApps or contributing code.  
-
-Let’s build the future of decentralized infrastructure together.
+Parallax is open source. Code, documentation and research are all welcome: see
+the [ParallaxProtocol GitHub organization](https://github.com/ParallaxProtocol).
+These docs live in [parallax-docs](https://github.com/ParallaxProtocol/parallax-docs).

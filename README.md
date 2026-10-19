@@ -128,3 +128,9 @@ When you rename or move a page, add a redirect from its old path.
 
 Changes pushed to the default branch are deployed automatically via the
 Mintlify GitHub integration.
+
+## License
+
+The documentation is licensed under the
+[Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/)
+(CC BY 4.0); see [LICENSE](LICENSE).

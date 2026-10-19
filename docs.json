@@ -25,7 +25,7 @@
     },
     "tabs": [
       {
-        "tab": "The Parallax Protocol",
+        "tab": "Protocol Specification",
         "groups": [
           {
             "group": "Foundational Topics",
@@ -392,6 +392,45 @@
         ]
       },
       {
+        "tab": "Parallax Wallet",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "parallax-wallet/introduction",
+              "parallax-wallet/installing",
+              "parallax-wallet/accounts"
+            ]
+          },
+          {
+            "group": "Using the Wallet",
+            "pages": [
+              "parallax-wallet/your-node",
+              "parallax-wallet/send-and-receive",
+              "parallax-wallet/contacts",
+              "parallax-wallet/messages",
+              "parallax-wallet/hardware-wallets",
+              "parallax-wallet/offline-signing"
+            ]
+          },
+          {
+            "group": "Settings & Safety",
+            "pages": [
+              "parallax-wallet/settings",
+              "parallax-wallet/security",
+              "parallax-wallet/ai-assistants"
+            ]
+          },
+          {
+            "group": "Reference",
+            "pages": [
+              "parallax-wallet/troubleshooting",
+              "parallax-wallet/updating"
+            ]
+          }
+        ]
+      },
+      {
         "tab": "Hashwarp",
         "groups": [
           {
@@ -431,21 +470,8 @@
         ]
       },
       {
-        "tab": "Guides",
+        "tab": "Beginner Guides",
         "groups": [
-          {
-            "group": "Parallax Wallet",
-            "pages": [
-              "guides/parallax-wallet/introduction",
-              "guides/parallax-wallet/installing",
-              "guides/parallax-wallet/accounts",
-              "guides/parallax-wallet/send-and-receive",
-              "guides/parallax-wallet/hardware-wallets",
-              "guides/parallax-wallet/offline-signing",
-              "guides/parallax-wallet/security",
-              "guides/parallax-wallet/settings"
-            ]
-          },
           {
             "group": "Parallax Client",
             "pages": [
@@ -473,14 +499,13 @@
           {
             "group": "AI Assistants",
             "pages": [
-              "guides/ai/parallax-mcp",
-              "guides/ai/parallax-wallet"
+              "guides/ai/parallax-mcp"
             ]
           }
         ]
       },
       {
-        "tab": "Exchange Integration",
+        "tab": "Exchange Integration Guide",
         "groups": [
           {
             "group": "Getting Started",
@@ -550,12 +575,12 @@
     },
     {
       "source": "/v2.1.x/guides/client/desktop",
-      "destination": "/guides/parallax-wallet/introduction",
+      "destination": "/parallax-wallet/introduction",
       "permanent": true
     },
     {
       "source": "/v2.1.x/guides/wallets/hardware-wallets",
-      "destination": "/guides/parallax-wallet/hardware-wallets",
+      "destination": "/parallax-wallet/hardware-wallets",
       "permanent": true
     },
     {
@@ -580,12 +605,12 @@
     },
     {
       "source": "/v2.0.x/guides/client/desktop",
-      "destination": "/guides/parallax-wallet/introduction",
+      "destination": "/parallax-wallet/introduction",
       "permanent": true
     },
     {
       "source": "/v2.0.x/guides/wallets/hardware-wallets",
-      "destination": "/guides/parallax-wallet/hardware-wallets",
+      "destination": "/parallax-wallet/hardware-wallets",
       "permanent": true
     },
     {
@@ -610,12 +635,12 @@
     },
     {
       "source": "/v1.2.x/guides/client/desktop",
-      "destination": "/guides/parallax-wallet/introduction",
+      "destination": "/parallax-wallet/introduction",
       "permanent": true
     },
     {
       "source": "/v1.2.x/guides/wallets/hardware-wallets",
-      "destination": "/guides/parallax-wallet/hardware-wallets",
+      "destination": "/parallax-wallet/hardware-wallets",
       "permanent": true
     },
     {
@@ -640,12 +665,12 @@
     },
     {
       "source": "/v1.1.x/guides/client/desktop",
-      "destination": "/guides/parallax-wallet/introduction",
+      "destination": "/parallax-wallet/introduction",
       "permanent": true
     },
     {
       "source": "/v1.1.x/guides/wallets/hardware-wallets",
-      "destination": "/guides/parallax-wallet/hardware-wallets",
+      "destination": "/parallax-wallet/hardware-wallets",
       "permanent": true
     },
     {
@@ -670,12 +695,12 @@
     },
     {
       "source": "/v2.1.0/guides/client/desktop",
-      "destination": "/guides/parallax-wallet/introduction",
+      "destination": "/parallax-wallet/introduction",
       "permanent": true
     },
     {
       "source": "/v2.1.0/guides/wallets/hardware-wallets",
-      "destination": "/guides/parallax-wallet/hardware-wallets",
+      "destination": "/parallax-wallet/hardware-wallets",
       "permanent": true
     },
     {
@@ -700,12 +725,12 @@
     },
     {
       "source": "/v2.0.0/guides/client/desktop",
-      "destination": "/guides/parallax-wallet/introduction",
+      "destination": "/parallax-wallet/introduction",
       "permanent": true
     },
     {
       "source": "/v2.0.0/guides/wallets/hardware-wallets",
-      "destination": "/guides/parallax-wallet/hardware-wallets",
+      "destination": "/parallax-wallet/hardware-wallets",
       "permanent": true
     },
     {
@@ -730,12 +755,12 @@
     },
     {
       "source": "/v1.2.1/guides/client/desktop",
-      "destination": "/guides/parallax-wallet/introduction",
+      "destination": "/parallax-wallet/introduction",
       "permanent": true
     },
     {
       "source": "/v1.2.1/guides/wallets/hardware-wallets",
-      "destination": "/guides/parallax-wallet/hardware-wallets",
+      "destination": "/parallax-wallet/hardware-wallets",
       "permanent": true
     },
     {
@@ -760,12 +785,12 @@
     },
     {
       "source": "/v1.2.0/guides/client/desktop",
-      "destination": "/guides/parallax-wallet/introduction",
+      "destination": "/parallax-wallet/introduction",
       "permanent": true
     },
     {
       "source": "/v1.2.0/guides/wallets/hardware-wallets",
-      "destination": "/guides/parallax-wallet/hardware-wallets",
+      "destination": "/parallax-wallet/hardware-wallets",
       "permanent": true
     },
     {
@@ -790,12 +815,12 @@
     },
     {
       "source": "/v1.1.1/guides/client/desktop",
-      "destination": "/guides/parallax-wallet/introduction",
+      "destination": "/parallax-wallet/introduction",
       "permanent": true
     },
     {
       "source": "/v1.1.1/guides/wallets/hardware-wallets",
-      "destination": "/guides/parallax-wallet/hardware-wallets",
+      "destination": "/parallax-wallet/hardware-wallets",
       "permanent": true
     },
     {
@@ -820,12 +845,12 @@
     },
     {
       "source": "/v1.1.0/guides/client/desktop",
-      "destination": "/guides/parallax-wallet/introduction",
+      "destination": "/parallax-wallet/introduction",
       "permanent": true
     },
     {
       "source": "/v1.1.0/guides/wallets/hardware-wallets",
-      "destination": "/guides/parallax-wallet/hardware-wallets",
+      "destination": "/parallax-wallet/hardware-wallets",
       "permanent": true
     },
     {
@@ -850,12 +875,12 @@
     },
     {
       "source": "/guides/client/desktop",
-      "destination": "/guides/parallax-wallet/introduction",
+      "destination": "/parallax-wallet/introduction",
       "permanent": true
     },
     {
       "source": "/guides/wallets/hardware-wallets",
-      "destination": "/guides/parallax-wallet/hardware-wallets",
+      "destination": "/parallax-wallet/hardware-wallets",
       "permanent": true
     },
     {
@@ -1377,6 +1402,51 @@
       "source": "/client/v2.x/tools/devp2p",
       "destination": "/client/tools/devp2p",
       "permanent": false
+    },
+    {
+      "source": "/guides/parallax-wallet/introduction",
+      "destination": "/parallax-wallet/introduction",
+      "permanent": true
+    },
+    {
+      "source": "/guides/parallax-wallet/installing",
+      "destination": "/parallax-wallet/installing",
+      "permanent": true
+    },
+    {
+      "source": "/guides/parallax-wallet/accounts",
+      "destination": "/parallax-wallet/accounts",
+      "permanent": true
+    },
+    {
+      "source": "/guides/parallax-wallet/send-and-receive",
+      "destination": "/parallax-wallet/send-and-receive",
+      "permanent": true
+    },
+    {
+      "source": "/guides/parallax-wallet/hardware-wallets",
+      "destination": "/parallax-wallet/hardware-wallets",
+      "permanent": true
+    },
+    {
+      "source": "/guides/parallax-wallet/offline-signing",
+      "destination": "/parallax-wallet/offline-signing",
+      "permanent": true
+    },
+    {
+      "source": "/guides/parallax-wallet/security",
+      "destination": "/parallax-wallet/security",
+      "permanent": true
+    },
+    {
+      "source": "/guides/parallax-wallet/settings",
+      "destination": "/parallax-wallet/settings",
+      "permanent": true
+    },
+    {
+      "source": "/guides/ai/parallax-wallet",
+      "destination": "/parallax-wallet/ai-assistants",
+      "permanent": true
     }
   ]
 }

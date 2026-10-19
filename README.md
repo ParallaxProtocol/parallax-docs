@@ -30,14 +30,15 @@ mint broken-links --check-redirects
 
 Each top-level folder is one tab of the site and changes on its own schedule:
 
-| Folder                  | Tab                   | Versioned |
-| ----------------------- | --------------------- | --------- |
-| `protocol/`             | The Parallax Protocol | No        |
-| `client/`               | Parallax Client       | Yes: the current major (v2), unversioned paths |
-| `client/v1.x/`          | Parallax Client       | Yes: archived, frozen |
-| `hashwarp/`             | Hashwarp              | No        |
-| `guides/`               | Guides                | No        |
-| `exchange-integration/` | Exchange Integration  | No        |
+| Folder                  | Tab                        | Versioned |
+| ----------------------- | -------------------------- | --------- |
+| `protocol/`             | Protocol Specification     | No        |
+| `client/`               | Parallax Client            | Yes: the current major (v2), unversioned paths |
+| `client/v1.x/`          | Parallax Client            | Yes: archived, frozen |
+| `parallax-wallet/`      | Parallax Wallet            | No        |
+| `hashwarp/`             | Hashwarp                   | No        |
+| `guides/`               | Beginner Guides            | No        |
+| `exchange-integration/` | Exchange Integration Guide | No        |
 
 Shared assets stay at the root: `index.mdx`, `logo/`, `images/`,
 `favicon.svg`.
@@ -53,8 +54,8 @@ folder of their own (`client/v1.x/`). `/client/v2.x/...` redirects to
 
 - **Protocol** pages describe the network's rules. When a rule changes, the page
   says from which upgrade or block it applies, instead of forking the page.
-- **Guides**, **Hashwarp** and **Exchange Integration** always describe the
-  current software. Where a step depends on a client version, link to the client
+- **Parallax Wallet**, **Beginner Guides**, **Hashwarp** and **Exchange
+  Integration Guide** always describe the current software. Where a step depends on a client version, link to the client
   page that documents it.
 
 ### Marking what changed within a major

@@ -131,6 +131,12 @@ Mintlify GitHub integration.
 
 ## License
 
-The documentation is licensed under the
+The documentation written for Parallax is licensed under the
 [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/)
 (CC BY 4.0); see [LICENSE](LICENSE).
+
+Some pages were adapted from the ethereum.org and go-ethereum documentation.
+They keep their authors' terms, and are not covered by CC BY 4.0 unless those
+terms allow it; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). Each
+such page ends with a line saying where it came from. When you adapt a page
+from another project, add the same line and list the page there.

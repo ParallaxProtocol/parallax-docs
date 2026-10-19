@@ -18,7 +18,7 @@ The `parallax` library is distributed as a collection of standard Go packages st
 
 The canonical import path for the Parallax client is `github.com/ParallaxProtocol/parallax/v2`, with all packages residing underneath. Although there are [lots of them](https://pkg.go.dev/github.com/ParallaxProtocol/parallax/v2/#section-directories) most developers will only care about a limited subset.
 
-The `/v2` suffix is the module's major version: it changes only when the exported Go API breaks, and a `/v3` module would be able to coexist with this one in the same build. See [Versioning](/client/fundamentals/versioning) for what each digit of a release means.
+The `/v2` suffix was added in v2.1.0; v2.0.x releases use the path `github.com/ParallaxProtocol/parallax`. The suffix is the module's major version: it changes only when the exported Go API breaks, and a `/v3` module would be able to coexist with this one in the same build. See [Versioning](/client/fundamentals/versioning) for what each digit of a release means.
 All the Parallax client packages can be downloaded using:
 
 ```sh

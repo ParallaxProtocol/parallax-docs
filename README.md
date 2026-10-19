@@ -1,10 +1,13 @@
 # Parallax Documentation
 
-Technical documentation for the Parallax protocol and CLI client. Published at [docs.parallaxprotocol.org](https://docs.parallaxprotocol.org).
+Technical documentation for the Parallax protocol, the Parallax client,
+Hashwarp, and the guides around them. Published at
+[docs.parallaxprotocol.org](https://docs.parallaxprotocol.org).
 
 ## Local development
 
-Install the [Mintlify CLI](https://www.npmjs.com/package/mint):
+Install the [Mintlify CLI](https://www.npmjs.com/package/mint). It refuses to
+run on Node 25 or newer, so use an LTS release:
 
 ```
 npm i -g mint
@@ -16,108 +19,112 @@ Preview locally:
 mint dev
 ```
 
-View at `http://localhost:3000`.
+View at `http://localhost:3000`. Before pushing, run:
 
-## Versions
-
-The site is versioned **by minor series**, not by individual release. Patch
-releases within a series rarely change the documentation, so one folder covers
-all of them — `v1.2.x/` serves both v1.2.0 and v1.2.1, and a future v2.0.1 needs
-no new folder. `docs.json` declares the series under `navigation.versions`:
-
-| Folder    | Version picker         | Notes                                              |
-| --------- | ---------------------- | -------------------------------------------------- |
-| `v2.1.x/` | hidden                 | In development. Reachable at `/v2.1.x/…`, but absent from the picker, search engines and sitemaps until release. |
-| `v2.0.x/` | `v2.0.x` — **default** | Current public release. Served at `/v2.0.x/…`.      |
-| `v1.2.x/` | `v1.2.x`               | The v1 client (`prlx`), imported from the archived [ParallaxProtocol/parallax-docs](https://github.com/ParallaxProtocol/parallax-docs) repository. Documents features dropped in v2.0.0, notably light-client sync and the `les` RPC namespace. Frozen; no longer maintained. |
-| `v1.1.x/` | `v1.1.x`               | Same content as `v1.2.x/`, copied. The v1.1 releases shipped against the same docs, but each series still needs its own folder — see below. Frozen. |
-
-What a major, minor, or patch release of the client itself means — and why a
-version bump never implies a consensus change — is documented on the
-[Versioning](v2.1.x/parallax-client/fundamentals/versioning.mdx) page.
-
-Every released tag redirects to the series that documents it, so
-`/v1.2.1/…` and `/v2.0.0/…` resolve for readers who know their exact version.
-Add a line to that redirect block when a new patch release ships.
-
-Content is duplicated per series on purpose — Mintlify page paths are literal
-file paths, so a series folder is a frozen snapshot of the docs as that line
-shipped. **Edit the folder for the release you are documenting.** Work on
-unreleased behaviour belongs in `v2.1.x/` only; a fix that also applies to the
-shipped release goes in both.
-
-Assets are shared and stay unversioned: `index.mdx` (landing page), `logo/`,
-`images/`, `favicon.svg`.
-
-### Links inside pages
-
-Always use **relative** links, and always write the leading `./` or `../`:
-`./sibling`, `../other-section/page`.
-
-- An absolute link like `/parallax-client/fundamentals/cli` escapes the version
-  folder and silently sends readers to whichever version is currently default.
-- A bare link like `(peer-management)` is **not** treated as a sibling. Mintlify
-  resolves it from the site root, so it breaks. Write `(./peer-management)`.
-
-Run `mint broken-links` before pushing; it catches both cases.
-
-### Releasing
-
-**A patch release** (`v2.0.1`) needs no new folder. Add its tag to the redirect
-block so `/v2.0.1/…` resolves, and edit `v2.0.x/` if the docs changed.
-
-**A new minor series** (`v2.2.0`) needs one:
-
-1. Start the folder from the outgoing development series — `cp -r docs/v2.1.x
-   docs/v2.2.x` — or snapshot a tag with
-   `git archive vX.Y.Z docs/guides docs/parallax-client docs/parallax-protocol | tar -x --strip-components=1 -C docs/vX.Y.x`.
-2. In `docs.json`, copy the series' `tabs` block and rewrite the path prefix to
-   `vX.Y.x/`.
-3. Move `default: true` and `tag: "latest"` onto the newly released series, and
-   drop `hidden` from it. Add the next development series as the new `hidden`
-   entry.
-4. Repoint the fall-through redirects at the bottom of `docs.json`
-   (`/guides/:slug*`, `/parallax-client/:slug*`, `/parallax-protocol/:slug*`)
-   to the new default, and add the release tag to the tag redirect block.
-
-### Every version needs its own folder — no aliases
-
-**A page path must belong to exactly one version.** Mintlify works out which
-version the reader is on by matching the URL against each version's page list.
-If two versions claim the same path, that lookup is ambiguous and the picker
-falls back to the default version.
-
-So when a release ships against docs that already exist, copy the tree into a
-folder of its own rather than pointing the new version at the old one's pages.
-`v1.1.x/` is a byte-for-byte copy of `v1.2.x/` for this reason.
-
-Two shortcuts look reasonable and both fail — the JSON schema accepts each, and
-`mint broken-links` reports no problem either way:
-
-| Shortcut | What happens |
-| -------- | ------------ |
-| `{"version": "v1.1.x", "href": "/v1.2.x/…"}` | The picker builds entries from a version's own pages, so an entry with no `pages` has nothing behind it. It renders, but clicking does nothing. |
-| `{"version": "v1.1.x", "pages": ["v1.2.x/…"]}` | Now two versions claim that path. Clicking **v1.2.x** lands on the page with the picker still reading the default version and the wrong sidebar — it breaks the version it was aliasing. |
-
-Verify with `mint dev` and actually switch versions in the dropdown. Neither
-failure shows up in `mint broken-links` or in schema validation.
-
-### Redirects
-
-Pre-versioning URLs (`/parallax-client/fundamentals/cli`) fall through to the
-current default version. Those rules are deliberately **not** permanent, since
-their target moves each time a new release becomes the default. Permanent
-redirects are reserved for mappings that will never move, such as genuine page
-renames.
+```
+mint validate
+mint broken-links --check-redirects
+```
 
 ## Structure
 
-Within each version folder:
+Each top-level folder is one tab of the site and changes on its own schedule:
 
-- `guides/` — User guides for wallets, mining, and client setup
-- `parallax-client/` — CLI client documentation (configuration, RPC, tracing, tools)
-- `parallax-protocol/` — Protocol documentation (consensus, PVM, networking, data structures)
+| Folder                  | Tab                   | Versioned |
+| ----------------------- | --------------------- | --------- |
+| `protocol/`             | The Parallax Protocol | No        |
+| `client/`               | Parallax Client       | Yes: the current major (v2), unversioned paths |
+| `client/v1.x/`          | Parallax Client       | Yes: archived, frozen |
+| `hashwarp/`             | Hashwarp              | No        |
+| `guides/`               | Guides                | No        |
+| `exchange-integration/` | Exchange Integration  | No        |
+
+Shared assets stay at the root: `index.mdx`, `logo/`, `images/`,
+`favicon.svg`.
+
+## Versions
+
+Only the client documentation is versioned, and only **by major release**.
+The current major lives at unversioned paths: `client/` covers every 2.x
+release and is edited in place as new ones ship, so `/client/...` links
+always show the current client and never need updating. Archived majors get a
+folder of their own (`client/v1.x/`). `/client/v2.x/...` redirects to
+`/client/...` for links that want to pin v2. Nothing else has versions:
+
+- **Protocol** pages describe the network's rules. When a rule changes, the page
+  says from which upgrade or block it applies, instead of forking the page.
+- **Guides**, **Hashwarp** and **Exchange Integration** always describe the
+  current software. Where a step depends on a client version, link to the client
+  page that documents it.
+
+### Marking what changed within a major
+
+A feature added after `X.0.0` names the release that added it, so readers on
+an older release of the same major know it isn't there yet:
+
+```mdx
+<Note>Tor support was added in v2.1.0.</Note>
+```
+
+or inline, for a single field or flag: "It was added in v2.1.2." A behaviour
+change that is not an addition says what older releases do instead. Never
+document unreleased behaviour as if it shipped: note the release it will ship
+in once that is known, and merge the docs change with the release.
+
+### A new major release
+
+The current pages stay where they are, so no link to `/client/...` changes.
+The outgoing major is archived into a new folder:
+
+1. Snapshot the outgoing tree into `client/v2.x/`: copy every page of
+   `client/` except the `v*.x/` folders, and rewrite links to current client
+   pages inside the copy from `/client/` to `/client/v2.x/` (leave
+   `/client/v1.x/` links alone).
+2. In `docs.json`, add a `v2.x` entry with `tag: "Archived"` listing the copied
+   pages under `client/v2.x/`, and rename the current entry to `v3.x`
+   (keeping `default: true` and `tag: "Latest"`).
+3. Remove the `/client/v2.x/<page>` → `/client/<page>` redirects, since those
+   pages now exist, and add one `/client/v3.x/<page>` → `/client/<page>`
+   redirect per current page.
+4. Point the old-layout v2 redirects (`/v2.1.x/parallax-client/:slug*` and the
+   other v2 prefixes) at `/client/v2.x/:slug*`, and make them permanent.
+5. Then edit `client/` for v3. `client/v2.x/` is frozen: no edits, not even
+   link fixes.
+
+### A page path belongs to exactly one version
+
+Mintlify works out which version the reader is on by matching the URL against
+each version's page list. If two versions claim the same path, the picker falls
+back to the default version and shows the wrong sidebar. So a version never
+points at another version's pages; it has a folder of its own. Neither
+`mint validate` nor `mint broken-links` catches this: check it in `mint dev` by
+switching versions in the picker.
+
+## Links inside pages
+
+Use **absolute** links: `/client/fundamentals/cli`,
+`/protocol/foundational-topics/blocks`. They survive a page moving between
+folders. Link to `/client/...` for the current client; an archived major's
+pages link only within their own folder (`/client/v1.x/...`). Omit the `.mdx` extension. Image paths are absolute
+too: `/images/...`.
+
+## Redirects
+
+`docs.json` redirects every URL of the old layout, where each version folder
+held all sections (`/v2.1.x/parallax-protocol/...`, `/v2.0.0/guides/...`), to
+its page in the new layout. The v1 rules are permanent. The v2 rules
+(`/v2.1.x/parallax-client/...` and other v2 prefixes) point at the current
+client pages and are not permanent, because they move to `client/v2.x/` when v2
+is archived; the same goes for the `/client/v2.x/...` aliases.
+
+The aliases are one redirect per page, not a `/client/v2.x/:slug*` wildcard:
+Mintlify ignores a wildcard redirect whose source sits under a folder that
+holds pages, such as `/client/`. Wildcards work for prefixes with no pages of
+their own, like `/v2.1.x/`.
+
+When you rename or move a page, add a redirect from its old path.
 
 ## Publishing
 
-Changes pushed to the default branch are deployed automatically via the Mintlify GitHub integration.
+Changes pushed to the default branch are deployed automatically via the
+Mintlify GitHub integration.

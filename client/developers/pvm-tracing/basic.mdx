@@ -41,7 +41,7 @@ An example log for a single opcode entry has the following format:
 
 ### Generating basic traces
 
-To generate a raw EVM opcode trace, the Parallax client provides a few [RPC API endpoints](/client/interacting-with-parallax/json-rpc-namespaces/debug). The most commonly used is [debug\_traceTransaction](/client/interacting-with-parallax/json-rpc-namespaces/debug#debug-tracetransaction).
+To generate a raw EVM opcode trace, the Parallax client provides a few [RPC API endpoints](/client/interacting-with-parallax/json-rpc-namespaces/debug). The most commonly used is [debug\_traceTransaction](/client/interacting-with-parallax/json-rpc-namespaces/debug#debug_tracetransaction).
 
 In its simplest form, `traceTransaction` accepts a transaction hash as its only argument. It then traces the transaction, aggregates all the generated data and returns it as a **large** JSON object. A sample invocation from the Parallax client console would be:
 

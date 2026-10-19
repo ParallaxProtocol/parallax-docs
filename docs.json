@@ -23,101 +23,42 @@
         }
       ]
     },
-    "versions": [
+    "tabs": [
       {
-        "version": "v2.1.x",
-        "tag": "latest",
-        "default": true,
-        "tabs": [
+        "tab": "The Parallax Protocol",
+        "groups": [
           {
-            "tab": "The Parallax Protocol",
-            "groups": [
+            "group": "Foundational Topics",
+            "pages": [
+              "protocol/foundational-topics/introduction-to-parallax",
+              "protocol/foundational-topics/introduction-to-lax",
+              "protocol/foundational-topics/introduction-to-dapps",
+              "protocol/foundational-topics/web2-vs-web3",
+              "protocol/foundational-topics/accounts",
+              "protocol/foundational-topics/transactions",
+              "protocol/foundational-topics/blocks",
               {
-                "group": "Foundational Topics",
+                "group": "Parallax Virtual Machine (PVM)",
                 "pages": [
-                  "v2.1.x/parallax-protocol/foundational-topics/introduction-to-parallax",
-                  "v2.1.x/parallax-protocol/foundational-topics/introduction-to-lax",
-                  "v2.1.x/parallax-protocol/foundational-topics/introduction-to-dapps",
-                  "v2.1.x/parallax-protocol/foundational-topics/web2-vs-web3",
-                  "v2.1.x/parallax-protocol/foundational-topics/accounts",
-                  "v2.1.x/parallax-protocol/foundational-topics/transactions",
-                  "v2.1.x/parallax-protocol/foundational-topics/blocks",
-                  {
-                    "group": "Parallax Virtual Machine (PVM)",
-                    "pages": [
-                      "v2.1.x/parallax-protocol/foundational-topics/pvm/overview",
-                      "v2.1.x/parallax-protocol/foundational-topics/pvm/opcodes"
-                    ]
-                  },
-                  "v2.1.x/parallax-protocol/foundational-topics/gas-and-fees",
-                  "v2.1.x/parallax-protocol/foundational-topics/nodes-and-clients",
-                  {
-                    "group": "Consensus Mechanisms",
-                    "pages": [
-                      "v2.1.x/parallax-protocol/foundational-topics/consensus/overview",
-                      "v2.1.x/parallax-protocol/foundational-topics/consensus/proof-of-work",
-                      "v2.1.x/parallax-protocol/foundational-topics/consensus/mining",
-                      {
-                        "group": "Mining Algorithms",
-                        "pages": [
-                          "v2.1.x/parallax-protocol/foundational-topics/consensus/algorithms/overview",
-                          "v2.1.x/parallax-protocol/foundational-topics/consensus/algorithms/dagger-hashimoto",
-                          "v2.1.x/parallax-protocol/foundational-topics/consensus/algorithms/ethash",
-                          "v2.1.x/parallax-protocol/foundational-topics/consensus/algorithms/xhash"
-                        ]
-                      }
-                    ]
-                  }
+                  "protocol/foundational-topics/pvm/overview",
+                  "protocol/foundational-topics/pvm/opcodes"
                 ]
               },
+              "protocol/foundational-topics/gas-and-fees",
+              "protocol/foundational-topics/nodes-and-clients",
               {
-                "group": "Parallax Stack",
+                "group": "Consensus Mechanisms",
                 "pages": [
-                  "v2.1.x/parallax-protocol/parallax-stack/introduction-stack",
-                  "v2.1.x/parallax-protocol/parallax-stack/smart-contracts",
-                  "v2.1.x/parallax-protocol/parallax-stack/development-networks",
-                  "v2.1.x/parallax-protocol/parallax-stack/development-frameworks",
+                  "protocol/foundational-topics/consensus/overview",
+                  "protocol/foundational-topics/consensus/proof-of-work",
+                  "protocol/foundational-topics/consensus/mining",
                   {
-                    "group": "Parallax Client APIs",
+                    "group": "Mining Algorithms",
                     "pages": [
-                      "v2.1.x/parallax-protocol/parallax-stack/apis/javascript-apis",
-                      "v2.1.x/parallax-protocol/parallax-stack/apis/json-rpc"
-                    ]
-                  },
-                  "v2.1.x/parallax-protocol/parallax-stack/storage",
-                  "v2.1.x/parallax-protocol/parallax-stack/ides"
-                ]
-              },
-              {
-                "group": "Advanced",
-                "pages": [
-                  "v2.1.x/parallax-protocol/advanced/bridges",
-                  {
-                    "group": "Standards",
-                    "pages": [
-                      "v2.1.x/parallax-protocol/advanced/standards/overview",
-                      "v2.1.x/parallax-protocol/advanced/standards/erc-20",
-                      "v2.1.x/parallax-protocol/advanced/standards/erc-721"
-                    ]
-                  },
-                  "v2.1.x/parallax-protocol/advanced/oracles",
-                  {
-                    "group": "Networking Layer",
-                    "pages": [
-                      "v2.1.x/parallax-protocol/advanced/networking/overview",
-                      "v2.1.x/parallax-protocol/advanced/networking/addresses",
-                      "v2.1.x/parallax-protocol/advanced/networking/discovery",
-                      "v2.1.x/parallax-protocol/advanced/networking/tor",
-                      "v2.1.x/parallax-protocol/advanced/networking/peer-management"
-                    ]
-                  },
-                  {
-                    "group": "Data Structures & Encoding",
-                    "pages": [
-                      "v2.1.x/parallax-protocol/advanced/data-structures/overview",
-                      "v2.1.x/parallax-protocol/advanced/data-structures/patricia-trie",
-                      "v2.1.x/parallax-protocol/advanced/data-structures/rlp",
-                      "v2.1.x/parallax-protocol/advanced/data-structures/secret-storage"
+                      "protocol/foundational-topics/consensus/algorithms/overview",
+                      "protocol/foundational-topics/consensus/algorithms/dagger-hashimoto",
+                      "protocol/foundational-topics/consensus/algorithms/ethash",
+                      "protocol/foundational-topics/consensus/algorithms/xhash"
                     ]
                   }
                 ]
@@ -125,220 +66,53 @@
             ]
           },
           {
-            "tab": "Parallax Client",
-            "groups": [
+            "group": "Parallax Stack",
+            "pages": [
+              "protocol/parallax-stack/introduction-stack",
+              "protocol/parallax-stack/smart-contracts",
+              "protocol/parallax-stack/development-networks",
+              "protocol/parallax-stack/development-frameworks",
               {
-                "group": "Parallax Client",
+                "group": "Parallax Client APIs",
                 "pages": [
-                  {
-                    "group": "Getting Started",
-                    "expanded": false,
-                    "pages": [
-                      "v2.1.x/parallax-client/getting-started/introduction",
-                      "v2.1.x/parallax-client/getting-started/binaries",
-                      "v2.1.x/parallax-client/getting-started/hardware-requirements",
-                      "v2.1.x/parallax-client/getting-started/installing-client"
-                    ]
-                  },
-                  {
-                    "group": "Fundamentals",
-                    "expanded": false,
-                    "pages": [
-                      "v2.1.x/parallax-client/fundamentals/cli",
-                      "v2.1.x/parallax-client/fundamentals/daemon-mode",
-                      "v2.1.x/parallax-client/fundamentals/security",
-                      "v2.1.x/parallax-client/fundamentals/sync-modes",
-                      "v2.1.x/parallax-client/fundamentals/account-management",
-                      "v2.1.x/parallax-client/fundamentals/databases",
-                      "v2.1.x/parallax-client/fundamentals/backup-and-restore",
-                      "v2.1.x/parallax-client/fundamentals/logs",
-                      "v2.1.x/parallax-client/fundamentals/connecting-to-peers",
-                      "v2.1.x/parallax-client/fundamentals/tor",
-                      "v2.1.x/parallax-client/fundamentals/pruning",
-                      "v2.1.x/parallax-client/fundamentals/private-networks",
-                      "v2.1.x/parallax-client/fundamentals/config-files",
-                      "v2.1.x/parallax-client/fundamentals/versioning"
-                    ]
-                  },
-                  {
-                    "group": "Interacting with Parallax Client",
-                    "expanded": false,
-                    "pages": [
-                      {
-                        "group": "JSON-RPC Server",
-                        "pages": [
-                          "v2.1.x/parallax-client/interacting-with-parallax/json-rpc-server/overview",
-                          "v2.1.x/parallax-client/interacting-with-parallax/json-rpc-server/batch-requests",
-                          "v2.1.x/parallax-client/interacting-with-parallax/json-rpc-server/realtime-events"
-                        ]
-                      },
-                      {
-                        "group": "JSON-RPC Namespaces",
-                        "pages": [
-                          "v2.1.x/parallax-client/interacting-with-parallax/json-rpc-namespaces/admin",
-                          "v2.1.x/parallax-client/interacting-with-parallax/json-rpc-namespaces/clique",
-                          "v2.1.x/parallax-client/interacting-with-parallax/json-rpc-namespaces/debug",
-                          "v2.1.x/parallax-client/interacting-with-parallax/json-rpc-namespaces/eth",
-                          "v2.1.x/parallax-client/interacting-with-parallax/json-rpc-namespaces/miner",
-                          "v2.1.x/parallax-client/interacting-with-parallax/json-rpc-namespaces/net",
-                          "v2.1.x/parallax-client/interacting-with-parallax/json-rpc-namespaces/personal",
-                          "v2.1.x/parallax-client/interacting-with-parallax/json-rpc-namespaces/txpool"
-                        ]
-                      },
-                      "v2.1.x/parallax-client/interacting-with-parallax/command-line-rpc",
-                      "v2.1.x/parallax-client/interacting-with-parallax/js-console",
-                      "v2.1.x/parallax-client/interacting-with-parallax/js-console-contracts",
-                      "v2.1.x/parallax-client/interacting-with-parallax/graph-ql-server"
-                    ]
-                  },
-                  {
-                    "group": "Developers",
-                    "pages": [
-                      "v2.1.x/parallax-client/developers/introduction",
-                      {
-                        "group": "dApp Developers",
-                        "pages": [
-                          "v2.1.x/parallax-client/developers/dapp/developer-mode",
-                          "v2.1.x/parallax-client/developers/dapp/go-api",
-                          "v2.1.x/parallax-client/developers/dapp/go-account-management",
-                          "v2.1.x/parallax-client/developers/dapp/go-contract-bindings"
-                        ]
-                      },
-                      {
-                        "group": "PVM Tracing",
-                        "pages": [
-                          "v2.1.x/parallax-client/developers/pvm-tracing/introduction",
-                          "v2.1.x/parallax-client/developers/pvm-tracing/basic",
-                          "v2.1.x/parallax-client/developers/pvm-tracing/built-in",
-                          "v2.1.x/parallax-client/developers/pvm-tracing/custom-pvm",
-                          "v2.1.x/parallax-client/developers/pvm-tracing/tutorial"
-                        ]
-                      },
-                      {
-                        "group": "Parallax Client Developer",
-                        "pages": [
-                          "v2.1.x/parallax-client/developers/client/guide",
-                          "v2.1.x/parallax-client/developers/client/disclosures",
-                          "v2.1.x/parallax-client/developers/client/dns-disc-guide",
-                          "v2.1.x/parallax-client/developers/client/code-review-guidelines"
-                        ]
-                      },
-                      "v2.1.x/parallax-client/developers/contributing"
-                    ]
-                  },
-                  {
-                    "group": "Monitoring",
-                    "pages": [
-                      "v2.1.x/parallax-client/monitoring/creating-dashboards",
-                      "v2.1.x/parallax-client/monitoring/understanding-dashboards",
-                      "v2.1.x/parallax-client/monitoring/metrics"
-                    ]
-                  },
-                  {
-                    "group": "Tools",
-                    "pages": [
-                      "v2.1.x/parallax-client/tools/parallax-wallet",
-                      {
-                        "group": "Clef",
-                        "pages": [
-                          "v2.1.x/parallax-client/tools/clef/introduction",
-                          "v2.1.x/parallax-client/tools/clef/apis",
-                          "v2.1.x/parallax-client/tools/clef/rules",
-                          "v2.1.x/parallax-client/tools/clef/setup",
-                          "v2.1.x/parallax-client/tools/clef/datatypes",
-                          "v2.1.x/parallax-client/tools/clef/tutorial",
-                          "v2.1.x/parallax-client/tools/clef/clique-signing"
-                        ]
-                      },
-                      "v2.1.x/parallax-client/tools/abi-gen",
-                      "v2.1.x/parallax-client/tools/devp2p"
-                    ]
-                  }
+                  "protocol/parallax-stack/apis/javascript-apis",
+                  "protocol/parallax-stack/apis/json-rpc"
                 ]
-              }
+              },
+              "protocol/parallax-stack/storage",
+              "protocol/parallax-stack/ides"
             ]
           },
           {
-            "tab": "Guides",
-            "groups": [
+            "group": "Advanced",
+            "pages": [
+              "protocol/advanced/bridges",
               {
-                "group": "Parallax Wallet",
+                "group": "Standards",
                 "pages": [
-                  "v2.1.x/guides/parallax-wallet/introduction",
-                  "v2.1.x/guides/parallax-wallet/installing",
-                  "v2.1.x/guides/parallax-wallet/accounts",
-                  "v2.1.x/guides/parallax-wallet/send-and-receive",
-                  "v2.1.x/guides/parallax-wallet/hardware-wallets",
-                  "v2.1.x/guides/parallax-wallet/offline-signing",
-                  "v2.1.x/guides/parallax-wallet/security",
-                  "v2.1.x/guides/parallax-wallet/settings"
+                  "protocol/advanced/standards/overview",
+                  "protocol/advanced/standards/erc-20",
+                  "protocol/advanced/standards/erc-721"
+                ]
+              },
+              "protocol/advanced/oracles",
+              {
+                "group": "Networking Layer",
+                "pages": [
+                  "protocol/advanced/networking/overview",
+                  "protocol/advanced/networking/addresses",
+                  "protocol/advanced/networking/discovery",
+                  "protocol/advanced/networking/tor",
+                  "protocol/advanced/networking/peer-management"
                 ]
               },
               {
-                "group": "Parallax Client",
+                "group": "Data Structures & Encoding",
                 "pages": [
-                  "v2.1.x/guides/client/introduction",
-                  "v2.1.x/guides/client/setup"
-                ]
-              },
-              {
-                "group": "Wallets",
-                "pages": [
-                  "v2.1.x/guides/wallets/accounts",
-                  "v2.1.x/guides/wallets/metamask",
-                  "v2.1.x/guides/wallets/send-and-reveive",
-                  "v2.1.x/guides/wallets/explorer",
-                  "v2.1.x/guides/wallets/keep-safe"
-                ]
-              },
-              {
-                "group": "Mining",
-                "pages": [
-                  "v2.1.x/guides/mining/introduction",
-                  "v2.1.x/guides/mining/cpu",
-                  {
-                    "group": "GPU Mining",
-                    "pages": [
-                      "v2.1.x/guides/mining/gpu",
-                      "v2.1.x/guides/mining/pool",
-                      "v2.1.x/guides/mining/troubleshooting"
-                    ]
-                  }
-                ]
-              },
-              {
-                "group": "AI Assistants",
-                "pages": [
-                  "v2.1.x/guides/ai/parallax-mcp",
-                  "v2.1.x/guides/ai/parallax-wallet"
-                ]
-              }
-            ]
-          },
-          {
-            "tab": "Exchange Integration",
-            "groups": [
-              {
-                "group": "Getting Started",
-                "pages": [
-                  "v2.1.x/exchange-integration/overview",
-                  "v2.1.x/exchange-integration/network-reference",
-                  "v2.1.x/exchange-integration/ethereum-differences"
-                ]
-              },
-              {
-                "group": "Integration",
-                "pages": [
-                  "v2.1.x/exchange-integration/node",
-                  "v2.1.x/exchange-integration/deposits",
-                  "v2.1.x/exchange-integration/withdrawals"
-                ]
-              },
-              {
-                "group": "Settlement Risk Mitigation",
-                "pages": [
-                  "v2.1.x/exchange-integration/confirmations",
-                  "v2.1.x/exchange-integration/status-api"
+                  "protocol/advanced/data-structures/overview",
+                  "protocol/advanced/data-structures/patricia-trie",
+                  "protocol/advanced/data-structures/rlp",
+                  "protocol/advanced/data-structures/secret-storage"
                 ]
               }
             ]
@@ -346,104 +120,12 @@
         ]
       },
       {
-        "version": "v2.0.x",
-        "tabs": [
+        "tab": "Parallax Client",
+        "versions": [
           {
-            "tab": "The Parallax Protocol",
-            "groups": [
-              {
-                "group": "Foundational Topics",
-                "pages": [
-                  "v2.0.x/parallax-protocol/foundational-topics/introduction-to-parallax",
-                  "v2.0.x/parallax-protocol/foundational-topics/introduction-to-lax",
-                  "v2.0.x/parallax-protocol/foundational-topics/introduction-to-dapps",
-                  "v2.0.x/parallax-protocol/foundational-topics/web2-vs-web3",
-                  "v2.0.x/parallax-protocol/foundational-topics/accounts",
-                  "v2.0.x/parallax-protocol/foundational-topics/transactions",
-                  "v2.0.x/parallax-protocol/foundational-topics/blocks",
-                  {
-                    "group": "Parallax Virtual Machine (PVM)",
-                    "pages": [
-                      "v2.0.x/parallax-protocol/foundational-topics/pvm/overview",
-                      "v2.0.x/parallax-protocol/foundational-topics/pvm/opcodes"
-                    ]
-                  },
-                  "v2.0.x/parallax-protocol/foundational-topics/gas-and-fees",
-                  "v2.0.x/parallax-protocol/foundational-topics/nodes-and-clients",
-                  {
-                    "group": "Consensus Mechanisms",
-                    "pages": [
-                      "v2.0.x/parallax-protocol/foundational-topics/consensus/overview",
-                      "v2.0.x/parallax-protocol/foundational-topics/consensus/proof-of-work",
-                      "v2.0.x/parallax-protocol/foundational-topics/consensus/mining",
-                      {
-                        "group": "Mining Algorithms",
-                        "pages": [
-                          "v2.0.x/parallax-protocol/foundational-topics/consensus/algorithms/overview",
-                          "v2.0.x/parallax-protocol/foundational-topics/consensus/algorithms/dagger-hashimoto",
-                          "v2.0.x/parallax-protocol/foundational-topics/consensus/algorithms/ethash",
-                          "v2.0.x/parallax-protocol/foundational-topics/consensus/algorithms/xhash"
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "group": "Parallax Stack",
-                "pages": [
-                  "v2.0.x/parallax-protocol/parallax-stack/introduction-stack",
-                  "v2.0.x/parallax-protocol/parallax-stack/smart-contracts",
-                  "v2.0.x/parallax-protocol/parallax-stack/development-networks",
-                  "v2.0.x/parallax-protocol/parallax-stack/development-frameworks",
-                  {
-                    "group": "Parallax Client APIs",
-                    "pages": [
-                      "v2.0.x/parallax-protocol/parallax-stack/apis/javascript-apis",
-                      "v2.0.x/parallax-protocol/parallax-stack/apis/json-rpc"
-                    ]
-                  },
-                  "v2.0.x/parallax-protocol/parallax-stack/storage",
-                  "v2.0.x/parallax-protocol/parallax-stack/ides"
-                ]
-              },
-              {
-                "group": "Advanced",
-                "pages": [
-                  "v2.0.x/parallax-protocol/advanced/bridges",
-                  {
-                    "group": "Standards",
-                    "pages": [
-                      "v2.0.x/parallax-protocol/advanced/standards/overview",
-                      "v2.0.x/parallax-protocol/advanced/standards/erc-20",
-                      "v2.0.x/parallax-protocol/advanced/standards/erc-721"
-                    ]
-                  },
-                  "v2.0.x/parallax-protocol/advanced/oracles",
-                  {
-                    "group": "Networking Layer",
-                    "pages": [
-                      "v2.0.x/parallax-protocol/advanced/networking/overview",
-                      "v2.0.x/parallax-protocol/advanced/networking/addresses",
-                      "v2.0.x/parallax-protocol/advanced/networking/pip-0006",
-                      "v2.0.x/parallax-protocol/advanced/networking/peer-management"
-                    ]
-                  },
-                  {
-                    "group": "Data Structures & Encoding",
-                    "pages": [
-                      "v2.0.x/parallax-protocol/advanced/data-structures/overview",
-                      "v2.0.x/parallax-protocol/advanced/data-structures/patricia-trie",
-                      "v2.0.x/parallax-protocol/advanced/data-structures/rlp",
-                      "v2.0.x/parallax-protocol/advanced/data-structures/secret-storage"
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "tab": "Parallax Client",
+            "version": "v2.x",
+            "tag": "Latest",
+            "default": true,
             "groups": [
               {
                 "group": "Parallax Client",
@@ -452,28 +134,30 @@
                     "group": "Getting Started",
                     "expanded": false,
                     "pages": [
-                      "v2.0.x/parallax-client/getting-started/introduction",
-                      "v2.0.x/parallax-client/getting-started/binaries",
-                      "v2.0.x/parallax-client/getting-started/hardware-requirements",
-                      "v2.0.x/parallax-client/getting-started/installing-client"
+                      "client/getting-started/introduction",
+                      "client/getting-started/binaries",
+                      "client/getting-started/hardware-requirements",
+                      "client/getting-started/installing-client"
                     ]
                   },
                   {
                     "group": "Fundamentals",
                     "expanded": false,
                     "pages": [
-                      "v2.0.x/parallax-client/fundamentals/cli",
-                      "v2.0.x/parallax-client/fundamentals/daemon-mode",
-                      "v2.0.x/parallax-client/fundamentals/security",
-                      "v2.0.x/parallax-client/fundamentals/sync-modes",
-                      "v2.0.x/parallax-client/fundamentals/account-management",
-                      "v2.0.x/parallax-client/fundamentals/databases",
-                      "v2.0.x/parallax-client/fundamentals/backup-and-restore",
-                      "v2.0.x/parallax-client/fundamentals/logs",
-                      "v2.0.x/parallax-client/fundamentals/connecting-to-peers",
-                      "v2.0.x/parallax-client/fundamentals/pruning",
-                      "v2.0.x/parallax-client/fundamentals/private-networks",
-                      "v2.0.x/parallax-client/fundamentals/config-files"
+                      "client/fundamentals/cli",
+                      "client/fundamentals/daemon-mode",
+                      "client/fundamentals/security",
+                      "client/fundamentals/sync-modes",
+                      "client/fundamentals/account-management",
+                      "client/fundamentals/databases",
+                      "client/fundamentals/backup-and-restore",
+                      "client/fundamentals/logs",
+                      "client/fundamentals/connecting-to-peers",
+                      "client/fundamentals/tor",
+                      "client/fundamentals/pruning",
+                      "client/fundamentals/private-networks",
+                      "client/fundamentals/config-files",
+                      "client/fundamentals/versioning"
                     ]
                   },
                   {
@@ -483,91 +167,91 @@
                       {
                         "group": "JSON-RPC Server",
                         "pages": [
-                          "v2.0.x/parallax-client/interacting-with-parallax/json-rpc-server/overview",
-                          "v2.0.x/parallax-client/interacting-with-parallax/json-rpc-server/batch-requests",
-                          "v2.0.x/parallax-client/interacting-with-parallax/json-rpc-server/realtime-events"
+                          "client/interacting-with-parallax/json-rpc-server/overview",
+                          "client/interacting-with-parallax/json-rpc-server/batch-requests",
+                          "client/interacting-with-parallax/json-rpc-server/realtime-events"
                         ]
                       },
                       {
                         "group": "JSON-RPC Namespaces",
                         "pages": [
-                          "v2.0.x/parallax-client/interacting-with-parallax/json-rpc-namespaces/admin",
-                          "v2.0.x/parallax-client/interacting-with-parallax/json-rpc-namespaces/clique",
-                          "v2.0.x/parallax-client/interacting-with-parallax/json-rpc-namespaces/debug",
-                          "v2.0.x/parallax-client/interacting-with-parallax/json-rpc-namespaces/eth",
-                          "v2.0.x/parallax-client/interacting-with-parallax/json-rpc-namespaces/miner",
-                          "v2.0.x/parallax-client/interacting-with-parallax/json-rpc-namespaces/net",
-                          "v2.0.x/parallax-client/interacting-with-parallax/json-rpc-namespaces/personal",
-                          "v2.0.x/parallax-client/interacting-with-parallax/json-rpc-namespaces/txpool"
+                          "client/interacting-with-parallax/json-rpc-namespaces/admin",
+                          "client/interacting-with-parallax/json-rpc-namespaces/clique",
+                          "client/interacting-with-parallax/json-rpc-namespaces/debug",
+                          "client/interacting-with-parallax/json-rpc-namespaces/eth",
+                          "client/interacting-with-parallax/json-rpc-namespaces/miner",
+                          "client/interacting-with-parallax/json-rpc-namespaces/net",
+                          "client/interacting-with-parallax/json-rpc-namespaces/personal",
+                          "client/interacting-with-parallax/json-rpc-namespaces/txpool"
                         ]
                       },
-                      "v2.0.x/parallax-client/interacting-with-parallax/command-line-rpc",
-                      "v2.0.x/parallax-client/interacting-with-parallax/js-console",
-                      "v2.0.x/parallax-client/interacting-with-parallax/js-console-contracts",
-                      "v2.0.x/parallax-client/interacting-with-parallax/graph-ql-server"
+                      "client/interacting-with-parallax/command-line-rpc",
+                      "client/interacting-with-parallax/js-console",
+                      "client/interacting-with-parallax/js-console-contracts",
+                      "client/interacting-with-parallax/graph-ql-server"
                     ]
                   },
                   {
                     "group": "Developers",
                     "pages": [
-                      "v2.0.x/parallax-client/developers/introduction",
+                      "client/developers/introduction",
                       {
                         "group": "dApp Developers",
                         "pages": [
-                          "v2.0.x/parallax-client/developers/dapp/developer-mode",
-                          "v2.0.x/parallax-client/developers/dapp/go-api",
-                          "v2.0.x/parallax-client/developers/dapp/go-account-management",
-                          "v2.0.x/parallax-client/developers/dapp/go-contract-bindings"
+                          "client/developers/dapp/developer-mode",
+                          "client/developers/dapp/go-api",
+                          "client/developers/dapp/go-account-management",
+                          "client/developers/dapp/go-contract-bindings"
                         ]
                       },
                       {
                         "group": "PVM Tracing",
                         "pages": [
-                          "v2.0.x/parallax-client/developers/pvm-tracing/introduction",
-                          "v2.0.x/parallax-client/developers/pvm-tracing/basic",
-                          "v2.0.x/parallax-client/developers/pvm-tracing/built-in",
-                          "v2.0.x/parallax-client/developers/pvm-tracing/custom-pvm",
-                          "v2.0.x/parallax-client/developers/pvm-tracing/tutorial"
+                          "client/developers/pvm-tracing/introduction",
+                          "client/developers/pvm-tracing/basic",
+                          "client/developers/pvm-tracing/built-in",
+                          "client/developers/pvm-tracing/custom-pvm",
+                          "client/developers/pvm-tracing/tutorial"
                         ]
                       },
                       {
                         "group": "Parallax Client Developer",
                         "pages": [
-                          "v2.0.x/parallax-client/developers/client/guide",
-                          "v2.0.x/parallax-client/developers/client/disclosures",
-                          "v2.0.x/parallax-client/developers/client/dns-disc-guide",
-                          "v2.0.x/parallax-client/developers/client/code-review-guidelines"
+                          "client/developers/client/guide",
+                          "client/developers/client/disclosures",
+                          "client/developers/client/dns-disc-guide",
+                          "client/developers/client/code-review-guidelines"
                         ]
                       },
-                      "v2.0.x/parallax-client/developers/contributing"
+                      "client/developers/contributing"
                     ]
                   },
                   {
                     "group": "Monitoring",
                     "pages": [
-                      "v2.0.x/parallax-client/monitoring/creating-dashboards",
-                      "v2.0.x/parallax-client/monitoring/understanding-dashboards",
-                      "v2.0.x/parallax-client/monitoring/metrics"
+                      "client/monitoring/creating-dashboards",
+                      "client/monitoring/understanding-dashboards",
+                      "client/monitoring/metrics"
                     ]
                   },
                   {
                     "group": "Tools",
                     "pages": [
-                      "v2.0.x/parallax-client/tools/parallax-wallet",
+                      "client/tools/parallax-wallet",
                       {
                         "group": "Clef",
                         "pages": [
-                          "v2.0.x/parallax-client/tools/clef/introduction",
-                          "v2.0.x/parallax-client/tools/clef/apis",
-                          "v2.0.x/parallax-client/tools/clef/rules",
-                          "v2.0.x/parallax-client/tools/clef/setup",
-                          "v2.0.x/parallax-client/tools/clef/datatypes",
-                          "v2.0.x/parallax-client/tools/clef/tutorial",
-                          "v2.0.x/parallax-client/tools/clef/clique-signing"
+                          "client/tools/clef/introduction",
+                          "client/tools/clef/apis",
+                          "client/tools/clef/rules",
+                          "client/tools/clef/setup",
+                          "client/tools/clef/datatypes",
+                          "client/tools/clef/tutorial",
+                          "client/tools/clef/clique-signing"
                         ]
                       },
-                      "v2.0.x/parallax-client/tools/abi-gen",
-                      "v2.0.x/parallax-client/tools/devp2p"
+                      "client/tools/abi-gen",
+                      "client/tools/devp2p"
                     ]
                   }
                 ]
@@ -575,37 +259,130 @@
             ]
           },
           {
-            "tab": "Guides",
+            "version": "v1.x",
+            "tag": "Archived",
             "groups": [
               {
                 "group": "Parallax Client",
                 "pages": [
-                  "v2.0.x/guides/client/introduction",
-                  "v2.0.x/guides/client/desktop",
-                  "v2.0.x/guides/client/setup"
-                ]
-              },
-              {
-                "group": "Wallets",
-                "pages": [
-                  "v2.0.x/guides/wallets/accounts",
-                  "v2.0.x/guides/wallets/metamask",
-                  "v2.0.x/guides/wallets/send-and-reveive",
-                  "v2.0.x/guides/wallets/explorer",
-                  "v2.0.x/guides/wallets/keep-safe"
-                ]
-              },
-              {
-                "group": "Mining",
-                "pages": [
-                  "v2.0.x/guides/mining/introduction",
-                  "v2.0.x/guides/mining/cpu",
                   {
-                    "group": "GPU Mining",
+                    "group": "Getting Started",
+                    "expanded": false,
                     "pages": [
-                      "v2.0.x/guides/mining/gpu",
-                      "v2.0.x/guides/mining/pool",
-                      "v2.0.x/guides/mining/troubleshooting"
+                      "client/v1.x/getting-started/introduction",
+                      "client/v1.x/getting-started/hardware-requirements",
+                      "client/v1.x/getting-started/installing-client"
+                    ]
+                  },
+                  {
+                    "group": "Fundamentals",
+                    "expanded": false,
+                    "pages": [
+                      "client/v1.x/fundamentals/cli",
+                      "client/v1.x/fundamentals/security",
+                      "client/v1.x/fundamentals/sync-modes",
+                      "client/v1.x/fundamentals/account-management",
+                      "client/v1.x/fundamentals/databases",
+                      "client/v1.x/fundamentals/backup-and-restore",
+                      "client/v1.x/fundamentals/logs",
+                      "client/v1.x/fundamentals/connecting-to-peers",
+                      "client/v1.x/fundamentals/pruning",
+                      "client/v1.x/fundamentals/private-networks",
+                      "client/v1.x/fundamentals/config-files",
+                      "client/v1.x/fundamentals/light-client"
+                    ]
+                  },
+                  {
+                    "group": "Interacting with Parallax Client",
+                    "expanded": false,
+                    "pages": [
+                      {
+                        "group": "JSON-RPC Server",
+                        "pages": [
+                          "client/v1.x/interacting-with-parallax/json-rpc-server/overview",
+                          "client/v1.x/interacting-with-parallax/json-rpc-server/batch-requests",
+                          "client/v1.x/interacting-with-parallax/json-rpc-server/realtime-events"
+                        ]
+                      },
+                      {
+                        "group": "JSON-RPC Namespaces",
+                        "pages": [
+                          "client/v1.x/interacting-with-parallax/json-rpc-namespaces/admin",
+                          "client/v1.x/interacting-with-parallax/json-rpc-namespaces/clique",
+                          "client/v1.x/interacting-with-parallax/json-rpc-namespaces/debug",
+                          "client/v1.x/interacting-with-parallax/json-rpc-namespaces/eth",
+                          "client/v1.x/interacting-with-parallax/json-rpc-namespaces/les",
+                          "client/v1.x/interacting-with-parallax/json-rpc-namespaces/miner",
+                          "client/v1.x/interacting-with-parallax/json-rpc-namespaces/net",
+                          "client/v1.x/interacting-with-parallax/json-rpc-namespaces/personal",
+                          "client/v1.x/interacting-with-parallax/json-rpc-namespaces/txpool"
+                        ]
+                      },
+                      "client/v1.x/interacting-with-parallax/js-console",
+                      "client/v1.x/interacting-with-parallax/js-console-contracts",
+                      "client/v1.x/interacting-with-parallax/graph-ql-server"
+                    ]
+                  },
+                  {
+                    "group": "Developers",
+                    "pages": [
+                      "client/v1.x/developers/introduction",
+                      {
+                        "group": "dApp Developers",
+                        "pages": [
+                          "client/v1.x/developers/dapp/developer-mode",
+                          "client/v1.x/developers/dapp/go-api",
+                          "client/v1.x/developers/dapp/go-account-management",
+                          "client/v1.x/developers/dapp/go-contract-bindings"
+                        ]
+                      },
+                      {
+                        "group": "PVM Tracing",
+                        "pages": [
+                          "client/v1.x/developers/pvm-tracing/introduction",
+                          "client/v1.x/developers/pvm-tracing/basic",
+                          "client/v1.x/developers/pvm-tracing/built-in",
+                          "client/v1.x/developers/pvm-tracing/custom-pvm",
+                          "client/v1.x/developers/pvm-tracing/tutorial"
+                        ]
+                      },
+                      {
+                        "group": "Parallax Client Developer",
+                        "pages": [
+                          "client/v1.x/developers/client/guide",
+                          "client/v1.x/developers/client/disclosures",
+                          "client/v1.x/developers/client/dns-disc-guide",
+                          "client/v1.x/developers/client/code-review-guidelines"
+                        ]
+                      },
+                      "client/v1.x/developers/contributing"
+                    ]
+                  },
+                  {
+                    "group": "Monitoring",
+                    "pages": [
+                      "client/v1.x/monitoring/creating-dashboards",
+                      "client/v1.x/monitoring/understanding-dashboards",
+                      "client/v1.x/monitoring/metrics"
+                    ]
+                  },
+                  {
+                    "group": "Tools",
+                    "pages": [
+                      {
+                        "group": "Clef",
+                        "pages": [
+                          "client/v1.x/tools/clef/introduction",
+                          "client/v1.x/tools/clef/apis",
+                          "client/v1.x/tools/clef/rules",
+                          "client/v1.x/tools/clef/setup",
+                          "client/v1.x/tools/clef/datatypes",
+                          "client/v1.x/tools/clef/tutorial",
+                          "client/v1.x/tools/clef/clique-signing"
+                        ]
+                      },
+                      "client/v1.x/tools/abi-gen",
+                      "client/v1.x/tools/devp2p"
                     ]
                   }
                 ]
@@ -615,529 +392,91 @@
         ]
       },
       {
-        "version": "v1.2.x",
-        "tabs": [
+        "tab": "Hashwarp",
+        "groups": [
           {
-            "tab": "The Parallax Protocol",
-            "groups": [
-              {
-                "group": "Foundational Topics",
-                "pages": [
-                  "v1.2.x/parallax-protocol/foundational-topics/introduction-to-parallax",
-                  "v1.2.x/parallax-protocol/foundational-topics/introduction-to-lax",
-                  "v1.2.x/parallax-protocol/foundational-topics/introduction-to-dapps",
-                  "v1.2.x/parallax-protocol/foundational-topics/web2-vs-web3",
-                  "v1.2.x/parallax-protocol/foundational-topics/accounts",
-                  "v1.2.x/parallax-protocol/foundational-topics/transactions",
-                  "v1.2.x/parallax-protocol/foundational-topics/blocks",
-                  {
-                    "group": "Parallax Virtual Machine (PVM)",
-                    "pages": [
-                      "v1.2.x/parallax-protocol/foundational-topics/pvm/overview",
-                      "v1.2.x/parallax-protocol/foundational-topics/pvm/opcodes"
-                    ]
-                  },
-                  "v1.2.x/parallax-protocol/foundational-topics/gas-and-fees",
-                  "v1.2.x/parallax-protocol/foundational-topics/nodes-and-clients",
-                  {
-                    "group": "Consensus Mechanisms",
-                    "pages": [
-                      "v1.2.x/parallax-protocol/foundational-topics/consensus/overview",
-                      "v1.2.x/parallax-protocol/foundational-topics/consensus/proof-of-work",
-                      "v1.2.x/parallax-protocol/foundational-topics/consensus/mining",
-                      {
-                        "group": "Mining Algorithms",
-                        "pages": [
-                          "v1.2.x/parallax-protocol/foundational-topics/consensus/algorithms/overview",
-                          "v1.2.x/parallax-protocol/foundational-topics/consensus/algorithms/dagger-hashimoto",
-                          "v1.2.x/parallax-protocol/foundational-topics/consensus/algorithms/ethash",
-                          "v1.2.x/parallax-protocol/foundational-topics/consensus/algorithms/xhash"
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "group": "Parallax Stack",
-                "pages": [
-                  "v1.2.x/parallax-protocol/parallax-stack/introduction-stack",
-                  "v1.2.x/parallax-protocol/parallax-stack/smart-contracts",
-                  "v1.2.x/parallax-protocol/parallax-stack/development-networks",
-                  "v1.2.x/parallax-protocol/parallax-stack/development-frameworks",
-                  {
-                    "group": "Parallax Client APIs",
-                    "pages": [
-                      "v1.2.x/parallax-protocol/parallax-stack/apis/javascript-apis",
-                      "v1.2.x/parallax-protocol/parallax-stack/apis/json-rpc"
-                    ]
-                  },
-                  "v1.2.x/parallax-protocol/parallax-stack/storage",
-                  "v1.2.x/parallax-protocol/parallax-stack/ides"
-                ]
-              },
-              {
-                "group": "Advanced",
-                "pages": [
-                  "v1.2.x/parallax-protocol/advanced/bridges",
-                  {
-                    "group": "Standards",
-                    "pages": [
-                      "v1.2.x/parallax-protocol/advanced/standards/overview",
-                      "v1.2.x/parallax-protocol/advanced/standards/erc-20",
-                      "v1.2.x/parallax-protocol/advanced/standards/erc-721"
-                    ]
-                  },
-                  "v1.2.x/parallax-protocol/advanced/oracles",
-                  {
-                    "group": "Networking Layer",
-                    "pages": [
-                      "v1.2.x/parallax-protocol/advanced/networking/overview",
-                      "v1.2.x/parallax-protocol/advanced/networking/addresses"
-                    ]
-                  },
-                  {
-                    "group": "Data Structures & Encoding",
-                    "pages": [
-                      "v1.2.x/parallax-protocol/advanced/data-structures/overview",
-                      "v1.2.x/parallax-protocol/advanced/data-structures/patricia-trie",
-                      "v1.2.x/parallax-protocol/advanced/data-structures/rlp",
-                      "v1.2.x/parallax-protocol/advanced/data-structures/secret-storage"
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "tab": "Parallax Client",
-            "groups": [
-              {
-                "group": "Parallax Client",
-                "pages": [
-                  {
-                    "group": "Getting Started",
-                    "expanded": false,
-                    "pages": [
-                      "v1.2.x/parallax-client/getting-started/introduction",
-                      "v1.2.x/parallax-client/getting-started/hardware-requirements",
-                      "v1.2.x/parallax-client/getting-started/installing-client"
-                    ]
-                  },
-                  {
-                    "group": "Fundamentals",
-                    "expanded": false,
-                    "pages": [
-                      "v1.2.x/parallax-client/fundamentals/cli",
-                      "v1.2.x/parallax-client/fundamentals/security",
-                      "v1.2.x/parallax-client/fundamentals/sync-modes",
-                      "v1.2.x/parallax-client/fundamentals/account-management",
-                      "v1.2.x/parallax-client/fundamentals/databases",
-                      "v1.2.x/parallax-client/fundamentals/backup-and-restore",
-                      "v1.2.x/parallax-client/fundamentals/logs",
-                      "v1.2.x/parallax-client/fundamentals/connecting-to-peers",
-                      "v1.2.x/parallax-client/fundamentals/pruning",
-                      "v1.2.x/parallax-client/fundamentals/private-networks",
-                      "v1.2.x/parallax-client/fundamentals/config-files",
-                      "v1.2.x/parallax-client/fundamentals/light-client"
-                    ]
-                  },
-                  {
-                    "group": "Interacting with Parallax Client",
-                    "expanded": false,
-                    "pages": [
-                      {
-                        "group": "JSON-RPC Server",
-                        "pages": [
-                          "v1.2.x/parallax-client/interacting-with-parallax/json-rpc-server/overview",
-                          "v1.2.x/parallax-client/interacting-with-parallax/json-rpc-server/batch-requests",
-                          "v1.2.x/parallax-client/interacting-with-parallax/json-rpc-server/realtime-events"
-                        ]
-                      },
-                      {
-                        "group": "JSON-RPC Namespaces",
-                        "pages": [
-                          "v1.2.x/parallax-client/interacting-with-parallax/json-rpc-namespaces/admin",
-                          "v1.2.x/parallax-client/interacting-with-parallax/json-rpc-namespaces/clique",
-                          "v1.2.x/parallax-client/interacting-with-parallax/json-rpc-namespaces/debug",
-                          "v1.2.x/parallax-client/interacting-with-parallax/json-rpc-namespaces/eth",
-                          "v1.2.x/parallax-client/interacting-with-parallax/json-rpc-namespaces/les",
-                          "v1.2.x/parallax-client/interacting-with-parallax/json-rpc-namespaces/miner",
-                          "v1.2.x/parallax-client/interacting-with-parallax/json-rpc-namespaces/net",
-                          "v1.2.x/parallax-client/interacting-with-parallax/json-rpc-namespaces/personal",
-                          "v1.2.x/parallax-client/interacting-with-parallax/json-rpc-namespaces/txpool"
-                        ]
-                      },
-                      "v1.2.x/parallax-client/interacting-with-parallax/js-console",
-                      "v1.2.x/parallax-client/interacting-with-parallax/js-console-contracts",
-                      "v1.2.x/parallax-client/interacting-with-parallax/graph-ql-server"
-                    ]
-                  },
-                  {
-                    "group": "Developers",
-                    "pages": [
-                      "v1.2.x/parallax-client/developers/introduction",
-                      {
-                        "group": "dApp Developers",
-                        "pages": [
-                          "v1.2.x/parallax-client/developers/dapp/developer-mode",
-                          "v1.2.x/parallax-client/developers/dapp/go-api",
-                          "v1.2.x/parallax-client/developers/dapp/go-account-management",
-                          "v1.2.x/parallax-client/developers/dapp/go-contract-bindings"
-                        ]
-                      },
-                      {
-                        "group": "PVM Tracing",
-                        "pages": [
-                          "v1.2.x/parallax-client/developers/pvm-tracing/introduction",
-                          "v1.2.x/parallax-client/developers/pvm-tracing/basic",
-                          "v1.2.x/parallax-client/developers/pvm-tracing/built-in",
-                          "v1.2.x/parallax-client/developers/pvm-tracing/custom-pvm",
-                          "v1.2.x/parallax-client/developers/pvm-tracing/tutorial"
-                        ]
-                      },
-                      {
-                        "group": "Parallax Client Developer",
-                        "pages": [
-                          "v1.2.x/parallax-client/developers/client/guide",
-                          "v1.2.x/parallax-client/developers/client/disclosures",
-                          "v1.2.x/parallax-client/developers/client/dns-disc-guide",
-                          "v1.2.x/parallax-client/developers/client/code-review-guidelines"
-                        ]
-                      },
-                      "v1.2.x/parallax-client/developers/contributing"
-                    ]
-                  },
-                  {
-                    "group": "Monitoring",
-                    "pages": [
-                      "v1.2.x/parallax-client/monitoring/creating-dashboards",
-                      "v1.2.x/parallax-client/monitoring/understanding-dashboards",
-                      "v1.2.x/parallax-client/monitoring/metrics"
-                    ]
-                  },
-                  {
-                    "group": "Tools",
-                    "pages": [
-                      {
-                        "group": "Clef",
-                        "pages": [
-                          "v1.2.x/parallax-client/tools/clef/introduction",
-                          "v1.2.x/parallax-client/tools/clef/apis",
-                          "v1.2.x/parallax-client/tools/clef/rules",
-                          "v1.2.x/parallax-client/tools/clef/setup",
-                          "v1.2.x/parallax-client/tools/clef/datatypes",
-                          "v1.2.x/parallax-client/tools/clef/tutorial",
-                          "v1.2.x/parallax-client/tools/clef/clique-signing"
-                        ]
-                      },
-                      "v1.2.x/parallax-client/tools/abi-gen",
-                      "v1.2.x/parallax-client/tools/devp2p"
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "tab": "Guides",
-            "groups": [
-              {
-                "group": "Parallax Client",
-                "pages": [
-                  "v1.2.x/guides/client/introduction",
-                  "v1.2.x/guides/client/setup"
-                ]
-              },
-              {
-                "group": "Wallets",
-                "pages": [
-                  "v1.2.x/guides/wallets/accounts",
-                  "v1.2.x/guides/wallets/metamask",
-                  "v1.2.x/guides/wallets/send-and-reveive",
-                  "v1.2.x/guides/wallets/explorer",
-                  "v1.2.x/guides/wallets/keep-safe"
-                ]
-              },
-              {
-                "group": "Mining",
-                "pages": [
-                  "v1.2.x/guides/mining/introduction",
-                  "v1.2.x/guides/mining/cpu",
-                  {
-                    "group": "GPU Mining",
-                    "pages": [
-                      "v1.2.x/guides/mining/gpu",
-                      "v1.2.x/guides/mining/pool",
-                      "v1.2.x/guides/mining/troubleshooting"
-                    ]
-                  }
-                ]
-              }
+            "group": "Hashwarp",
+            "pages": [
+              "hashwarp/getting-started",
+              "hashwarp/pool-mining",
+              "hashwarp/troubleshooting"
             ]
           }
         ]
       },
       {
-        "version": "v1.1.x",
-        "tabs": [
+        "tab": "Guides",
+        "groups": [
           {
-            "tab": "The Parallax Protocol",
-            "groups": [
-              {
-                "group": "Foundational Topics",
-                "pages": [
-                  "v1.1.x/parallax-protocol/foundational-topics/introduction-to-parallax",
-                  "v1.1.x/parallax-protocol/foundational-topics/introduction-to-lax",
-                  "v1.1.x/parallax-protocol/foundational-topics/introduction-to-dapps",
-                  "v1.1.x/parallax-protocol/foundational-topics/web2-vs-web3",
-                  "v1.1.x/parallax-protocol/foundational-topics/accounts",
-                  "v1.1.x/parallax-protocol/foundational-topics/transactions",
-                  "v1.1.x/parallax-protocol/foundational-topics/blocks",
-                  {
-                    "group": "Parallax Virtual Machine (PVM)",
-                    "pages": [
-                      "v1.1.x/parallax-protocol/foundational-topics/pvm/overview",
-                      "v1.1.x/parallax-protocol/foundational-topics/pvm/opcodes"
-                    ]
-                  },
-                  "v1.1.x/parallax-protocol/foundational-topics/gas-and-fees",
-                  "v1.1.x/parallax-protocol/foundational-topics/nodes-and-clients",
-                  {
-                    "group": "Consensus Mechanisms",
-                    "pages": [
-                      "v1.1.x/parallax-protocol/foundational-topics/consensus/overview",
-                      "v1.1.x/parallax-protocol/foundational-topics/consensus/proof-of-work",
-                      "v1.1.x/parallax-protocol/foundational-topics/consensus/mining",
-                      {
-                        "group": "Mining Algorithms",
-                        "pages": [
-                          "v1.1.x/parallax-protocol/foundational-topics/consensus/algorithms/overview",
-                          "v1.1.x/parallax-protocol/foundational-topics/consensus/algorithms/dagger-hashimoto",
-                          "v1.1.x/parallax-protocol/foundational-topics/consensus/algorithms/ethash",
-                          "v1.1.x/parallax-protocol/foundational-topics/consensus/algorithms/xhash"
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "group": "Parallax Stack",
-                "pages": [
-                  "v1.1.x/parallax-protocol/parallax-stack/introduction-stack",
-                  "v1.1.x/parallax-protocol/parallax-stack/smart-contracts",
-                  "v1.1.x/parallax-protocol/parallax-stack/development-networks",
-                  "v1.1.x/parallax-protocol/parallax-stack/development-frameworks",
-                  {
-                    "group": "Parallax Client APIs",
-                    "pages": [
-                      "v1.1.x/parallax-protocol/parallax-stack/apis/javascript-apis",
-                      "v1.1.x/parallax-protocol/parallax-stack/apis/json-rpc"
-                    ]
-                  },
-                  "v1.1.x/parallax-protocol/parallax-stack/storage",
-                  "v1.1.x/parallax-protocol/parallax-stack/ides"
-                ]
-              },
-              {
-                "group": "Advanced",
-                "pages": [
-                  "v1.1.x/parallax-protocol/advanced/bridges",
-                  {
-                    "group": "Standards",
-                    "pages": [
-                      "v1.1.x/parallax-protocol/advanced/standards/overview",
-                      "v1.1.x/parallax-protocol/advanced/standards/erc-20",
-                      "v1.1.x/parallax-protocol/advanced/standards/erc-721"
-                    ]
-                  },
-                  "v1.1.x/parallax-protocol/advanced/oracles",
-                  {
-                    "group": "Networking Layer",
-                    "pages": [
-                      "v1.1.x/parallax-protocol/advanced/networking/overview",
-                      "v1.1.x/parallax-protocol/advanced/networking/addresses"
-                    ]
-                  },
-                  {
-                    "group": "Data Structures & Encoding",
-                    "pages": [
-                      "v1.1.x/parallax-protocol/advanced/data-structures/overview",
-                      "v1.1.x/parallax-protocol/advanced/data-structures/patricia-trie",
-                      "v1.1.x/parallax-protocol/advanced/data-structures/rlp",
-                      "v1.1.x/parallax-protocol/advanced/data-structures/secret-storage"
-                    ]
-                  }
-                ]
-              }
+            "group": "Parallax Wallet",
+            "pages": [
+              "guides/parallax-wallet/introduction",
+              "guides/parallax-wallet/installing",
+              "guides/parallax-wallet/accounts",
+              "guides/parallax-wallet/send-and-receive",
+              "guides/parallax-wallet/hardware-wallets",
+              "guides/parallax-wallet/offline-signing",
+              "guides/parallax-wallet/security",
+              "guides/parallax-wallet/settings"
             ]
           },
           {
-            "tab": "Parallax Client",
-            "groups": [
-              {
-                "group": "Parallax Client",
-                "pages": [
-                  {
-                    "group": "Getting Started",
-                    "expanded": false,
-                    "pages": [
-                      "v1.1.x/parallax-client/getting-started/introduction",
-                      "v1.1.x/parallax-client/getting-started/hardware-requirements",
-                      "v1.1.x/parallax-client/getting-started/installing-client"
-                    ]
-                  },
-                  {
-                    "group": "Fundamentals",
-                    "expanded": false,
-                    "pages": [
-                      "v1.1.x/parallax-client/fundamentals/cli",
-                      "v1.1.x/parallax-client/fundamentals/security",
-                      "v1.1.x/parallax-client/fundamentals/sync-modes",
-                      "v1.1.x/parallax-client/fundamentals/account-management",
-                      "v1.1.x/parallax-client/fundamentals/databases",
-                      "v1.1.x/parallax-client/fundamentals/backup-and-restore",
-                      "v1.1.x/parallax-client/fundamentals/logs",
-                      "v1.1.x/parallax-client/fundamentals/connecting-to-peers",
-                      "v1.1.x/parallax-client/fundamentals/pruning",
-                      "v1.1.x/parallax-client/fundamentals/private-networks",
-                      "v1.1.x/parallax-client/fundamentals/config-files",
-                      "v1.1.x/parallax-client/fundamentals/light-client"
-                    ]
-                  },
-                  {
-                    "group": "Interacting with Parallax Client",
-                    "expanded": false,
-                    "pages": [
-                      {
-                        "group": "JSON-RPC Server",
-                        "pages": [
-                          "v1.1.x/parallax-client/interacting-with-parallax/json-rpc-server/overview",
-                          "v1.1.x/parallax-client/interacting-with-parallax/json-rpc-server/batch-requests",
-                          "v1.1.x/parallax-client/interacting-with-parallax/json-rpc-server/realtime-events"
-                        ]
-                      },
-                      {
-                        "group": "JSON-RPC Namespaces",
-                        "pages": [
-                          "v1.1.x/parallax-client/interacting-with-parallax/json-rpc-namespaces/admin",
-                          "v1.1.x/parallax-client/interacting-with-parallax/json-rpc-namespaces/clique",
-                          "v1.1.x/parallax-client/interacting-with-parallax/json-rpc-namespaces/debug",
-                          "v1.1.x/parallax-client/interacting-with-parallax/json-rpc-namespaces/eth",
-                          "v1.1.x/parallax-client/interacting-with-parallax/json-rpc-namespaces/les",
-                          "v1.1.x/parallax-client/interacting-with-parallax/json-rpc-namespaces/miner",
-                          "v1.1.x/parallax-client/interacting-with-parallax/json-rpc-namespaces/net",
-                          "v1.1.x/parallax-client/interacting-with-parallax/json-rpc-namespaces/personal",
-                          "v1.1.x/parallax-client/interacting-with-parallax/json-rpc-namespaces/txpool"
-                        ]
-                      },
-                      "v1.1.x/parallax-client/interacting-with-parallax/js-console",
-                      "v1.1.x/parallax-client/interacting-with-parallax/js-console-contracts",
-                      "v1.1.x/parallax-client/interacting-with-parallax/graph-ql-server"
-                    ]
-                  },
-                  {
-                    "group": "Developers",
-                    "pages": [
-                      "v1.1.x/parallax-client/developers/introduction",
-                      {
-                        "group": "dApp Developers",
-                        "pages": [
-                          "v1.1.x/parallax-client/developers/dapp/developer-mode",
-                          "v1.1.x/parallax-client/developers/dapp/go-api",
-                          "v1.1.x/parallax-client/developers/dapp/go-account-management",
-                          "v1.1.x/parallax-client/developers/dapp/go-contract-bindings"
-                        ]
-                      },
-                      {
-                        "group": "PVM Tracing",
-                        "pages": [
-                          "v1.1.x/parallax-client/developers/pvm-tracing/introduction",
-                          "v1.1.x/parallax-client/developers/pvm-tracing/basic",
-                          "v1.1.x/parallax-client/developers/pvm-tracing/built-in",
-                          "v1.1.x/parallax-client/developers/pvm-tracing/custom-pvm",
-                          "v1.1.x/parallax-client/developers/pvm-tracing/tutorial"
-                        ]
-                      },
-                      {
-                        "group": "Parallax Client Developer",
-                        "pages": [
-                          "v1.1.x/parallax-client/developers/client/guide",
-                          "v1.1.x/parallax-client/developers/client/disclosures",
-                          "v1.1.x/parallax-client/developers/client/dns-disc-guide",
-                          "v1.1.x/parallax-client/developers/client/code-review-guidelines"
-                        ]
-                      },
-                      "v1.1.x/parallax-client/developers/contributing"
-                    ]
-                  },
-                  {
-                    "group": "Monitoring",
-                    "pages": [
-                      "v1.1.x/parallax-client/monitoring/creating-dashboards",
-                      "v1.1.x/parallax-client/monitoring/understanding-dashboards",
-                      "v1.1.x/parallax-client/monitoring/metrics"
-                    ]
-                  },
-                  {
-                    "group": "Tools",
-                    "pages": [
-                      {
-                        "group": "Clef",
-                        "pages": [
-                          "v1.1.x/parallax-client/tools/clef/introduction",
-                          "v1.1.x/parallax-client/tools/clef/apis",
-                          "v1.1.x/parallax-client/tools/clef/rules",
-                          "v1.1.x/parallax-client/tools/clef/setup",
-                          "v1.1.x/parallax-client/tools/clef/datatypes",
-                          "v1.1.x/parallax-client/tools/clef/tutorial",
-                          "v1.1.x/parallax-client/tools/clef/clique-signing"
-                        ]
-                      },
-                      "v1.1.x/parallax-client/tools/abi-gen",
-                      "v1.1.x/parallax-client/tools/devp2p"
-                    ]
-                  }
-                ]
-              }
+            "group": "Parallax Client",
+            "pages": [
+              "guides/client/introduction",
+              "guides/client/setup"
             ]
           },
           {
-            "tab": "Guides",
-            "groups": [
-              {
-                "group": "Parallax Client",
-                "pages": [
-                  "v1.1.x/guides/client/introduction",
-                  "v1.1.x/guides/client/setup"
-                ]
-              },
-              {
-                "group": "Wallets",
-                "pages": [
-                  "v1.1.x/guides/wallets/accounts",
-                  "v1.1.x/guides/wallets/metamask",
-                  "v1.1.x/guides/wallets/send-and-reveive",
-                  "v1.1.x/guides/wallets/explorer",
-                  "v1.1.x/guides/wallets/keep-safe"
-                ]
-              },
-              {
-                "group": "Mining",
-                "pages": [
-                  "v1.1.x/guides/mining/introduction",
-                  "v1.1.x/guides/mining/cpu",
-                  {
-                    "group": "GPU Mining",
-                    "pages": [
-                      "v1.1.x/guides/mining/gpu",
-                      "v1.1.x/guides/mining/pool",
-                      "v1.1.x/guides/mining/troubleshooting"
-                    ]
-                  }
-                ]
-              }
+            "group": "Wallets",
+            "pages": [
+              "guides/wallets/accounts",
+              "guides/wallets/metamask",
+              "guides/wallets/send-and-reveive",
+              "guides/wallets/explorer",
+              "guides/wallets/keep-safe"
+            ]
+          },
+          {
+            "group": "Mining",
+            "pages": [
+              "guides/mining/introduction",
+              "guides/mining/cpu"
+            ]
+          },
+          {
+            "group": "AI Assistants",
+            "pages": [
+              "guides/ai/parallax-mcp",
+              "guides/ai/parallax-wallet"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Exchange Integration",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "exchange-integration/overview",
+              "exchange-integration/network-reference",
+              "exchange-integration/ethereum-differences"
+            ]
+          },
+          {
+            "group": "Integration",
+            "pages": [
+              "exchange-integration/node",
+              "exchange-integration/deposits",
+              "exchange-integration/withdrawals"
+            ]
+          },
+          {
+            "group": "Settlement Risk Mitigation",
+            "pages": [
+              "exchange-integration/confirmations",
+              "exchange-integration/status-api"
             ]
           }
         ]
@@ -1169,63 +508,848 @@
   },
   "redirects": [
     {
-      "source": "/v2.1.x/parallax-protocol/advanced/networking/pip-0006",
-      "destination": "/v2.1.x/parallax-protocol/advanced/networking/discovery",
+      "source": "/v2.1.x/guides/mining/gpu",
+      "destination": "/hashwarp/getting-started",
       "permanent": true
     },
     {
-      "source": "/v2.1.x/guides/wallets/hardware-wallets",
-      "destination": "/v2.1.x/guides/parallax-wallet/hardware-wallets",
+      "source": "/v2.1.x/guides/mining/pool",
+      "destination": "/hashwarp/pool-mining",
+      "permanent": true
+    },
+    {
+      "source": "/v2.1.x/guides/mining/troubleshooting",
+      "destination": "/hashwarp/troubleshooting",
       "permanent": true
     },
     {
       "source": "/v2.1.x/guides/client/desktop",
-      "destination": "/v2.1.x/guides/parallax-wallet/introduction",
+      "destination": "/guides/parallax-wallet/introduction",
       "permanent": true
     },
     {
-      "source": "/v2.1.0/:slug*",
-      "destination": "/v2.1.x/:slug*",
+      "source": "/v2.1.x/guides/wallets/hardware-wallets",
+      "destination": "/guides/parallax-wallet/hardware-wallets",
       "permanent": true
     },
     {
-      "source": "/v2.0.0/:slug*",
-      "destination": "/v2.0.x/:slug*",
+      "source": "/v2.1.x/parallax-protocol/advanced/networking/pip-0006",
+      "destination": "/protocol/advanced/networking/discovery",
       "permanent": true
     },
     {
-      "source": "/v1.2.1/:slug*",
-      "destination": "/v1.2.x/:slug*",
+      "source": "/v2.0.x/guides/mining/gpu",
+      "destination": "/hashwarp/getting-started",
       "permanent": true
     },
     {
-      "source": "/v1.2.0/:slug*",
-      "destination": "/v1.2.x/:slug*",
+      "source": "/v2.0.x/guides/mining/pool",
+      "destination": "/hashwarp/pool-mining",
       "permanent": true
     },
     {
-      "source": "/v1.1.1/:slug*",
-      "destination": "/v1.1.x/:slug*",
+      "source": "/v2.0.x/guides/mining/troubleshooting",
+      "destination": "/hashwarp/troubleshooting",
       "permanent": true
     },
     {
-      "source": "/v1.1.0/:slug*",
-      "destination": "/v1.1.x/:slug*",
+      "source": "/v2.0.x/guides/client/desktop",
+      "destination": "/guides/parallax-wallet/introduction",
       "permanent": true
     },
     {
-      "source": "/guides/:slug*",
-      "destination": "/v2.1.x/guides/:slug*",
+      "source": "/v2.0.x/guides/wallets/hardware-wallets",
+      "destination": "/guides/parallax-wallet/hardware-wallets",
+      "permanent": true
+    },
+    {
+      "source": "/v2.0.x/parallax-protocol/advanced/networking/pip-0006",
+      "destination": "/protocol/advanced/networking/discovery",
+      "permanent": true
+    },
+    {
+      "source": "/v1.2.x/guides/mining/gpu",
+      "destination": "/hashwarp/getting-started",
+      "permanent": true
+    },
+    {
+      "source": "/v1.2.x/guides/mining/pool",
+      "destination": "/hashwarp/pool-mining",
+      "permanent": true
+    },
+    {
+      "source": "/v1.2.x/guides/mining/troubleshooting",
+      "destination": "/hashwarp/troubleshooting",
+      "permanent": true
+    },
+    {
+      "source": "/v1.2.x/guides/client/desktop",
+      "destination": "/guides/parallax-wallet/introduction",
+      "permanent": true
+    },
+    {
+      "source": "/v1.2.x/guides/wallets/hardware-wallets",
+      "destination": "/guides/parallax-wallet/hardware-wallets",
+      "permanent": true
+    },
+    {
+      "source": "/v1.2.x/parallax-protocol/advanced/networking/pip-0006",
+      "destination": "/protocol/advanced/networking/discovery",
+      "permanent": true
+    },
+    {
+      "source": "/v1.1.x/guides/mining/gpu",
+      "destination": "/hashwarp/getting-started",
+      "permanent": true
+    },
+    {
+      "source": "/v1.1.x/guides/mining/pool",
+      "destination": "/hashwarp/pool-mining",
+      "permanent": true
+    },
+    {
+      "source": "/v1.1.x/guides/mining/troubleshooting",
+      "destination": "/hashwarp/troubleshooting",
+      "permanent": true
+    },
+    {
+      "source": "/v1.1.x/guides/client/desktop",
+      "destination": "/guides/parallax-wallet/introduction",
+      "permanent": true
+    },
+    {
+      "source": "/v1.1.x/guides/wallets/hardware-wallets",
+      "destination": "/guides/parallax-wallet/hardware-wallets",
+      "permanent": true
+    },
+    {
+      "source": "/v1.1.x/parallax-protocol/advanced/networking/pip-0006",
+      "destination": "/protocol/advanced/networking/discovery",
+      "permanent": true
+    },
+    {
+      "source": "/v2.1.0/guides/mining/gpu",
+      "destination": "/hashwarp/getting-started",
+      "permanent": true
+    },
+    {
+      "source": "/v2.1.0/guides/mining/pool",
+      "destination": "/hashwarp/pool-mining",
+      "permanent": true
+    },
+    {
+      "source": "/v2.1.0/guides/mining/troubleshooting",
+      "destination": "/hashwarp/troubleshooting",
+      "permanent": true
+    },
+    {
+      "source": "/v2.1.0/guides/client/desktop",
+      "destination": "/guides/parallax-wallet/introduction",
+      "permanent": true
+    },
+    {
+      "source": "/v2.1.0/guides/wallets/hardware-wallets",
+      "destination": "/guides/parallax-wallet/hardware-wallets",
+      "permanent": true
+    },
+    {
+      "source": "/v2.1.0/parallax-protocol/advanced/networking/pip-0006",
+      "destination": "/protocol/advanced/networking/discovery",
+      "permanent": true
+    },
+    {
+      "source": "/v2.0.0/guides/mining/gpu",
+      "destination": "/hashwarp/getting-started",
+      "permanent": true
+    },
+    {
+      "source": "/v2.0.0/guides/mining/pool",
+      "destination": "/hashwarp/pool-mining",
+      "permanent": true
+    },
+    {
+      "source": "/v2.0.0/guides/mining/troubleshooting",
+      "destination": "/hashwarp/troubleshooting",
+      "permanent": true
+    },
+    {
+      "source": "/v2.0.0/guides/client/desktop",
+      "destination": "/guides/parallax-wallet/introduction",
+      "permanent": true
+    },
+    {
+      "source": "/v2.0.0/guides/wallets/hardware-wallets",
+      "destination": "/guides/parallax-wallet/hardware-wallets",
+      "permanent": true
+    },
+    {
+      "source": "/v2.0.0/parallax-protocol/advanced/networking/pip-0006",
+      "destination": "/protocol/advanced/networking/discovery",
+      "permanent": true
+    },
+    {
+      "source": "/v1.2.1/guides/mining/gpu",
+      "destination": "/hashwarp/getting-started",
+      "permanent": true
+    },
+    {
+      "source": "/v1.2.1/guides/mining/pool",
+      "destination": "/hashwarp/pool-mining",
+      "permanent": true
+    },
+    {
+      "source": "/v1.2.1/guides/mining/troubleshooting",
+      "destination": "/hashwarp/troubleshooting",
+      "permanent": true
+    },
+    {
+      "source": "/v1.2.1/guides/client/desktop",
+      "destination": "/guides/parallax-wallet/introduction",
+      "permanent": true
+    },
+    {
+      "source": "/v1.2.1/guides/wallets/hardware-wallets",
+      "destination": "/guides/parallax-wallet/hardware-wallets",
+      "permanent": true
+    },
+    {
+      "source": "/v1.2.1/parallax-protocol/advanced/networking/pip-0006",
+      "destination": "/protocol/advanced/networking/discovery",
+      "permanent": true
+    },
+    {
+      "source": "/v1.2.0/guides/mining/gpu",
+      "destination": "/hashwarp/getting-started",
+      "permanent": true
+    },
+    {
+      "source": "/v1.2.0/guides/mining/pool",
+      "destination": "/hashwarp/pool-mining",
+      "permanent": true
+    },
+    {
+      "source": "/v1.2.0/guides/mining/troubleshooting",
+      "destination": "/hashwarp/troubleshooting",
+      "permanent": true
+    },
+    {
+      "source": "/v1.2.0/guides/client/desktop",
+      "destination": "/guides/parallax-wallet/introduction",
+      "permanent": true
+    },
+    {
+      "source": "/v1.2.0/guides/wallets/hardware-wallets",
+      "destination": "/guides/parallax-wallet/hardware-wallets",
+      "permanent": true
+    },
+    {
+      "source": "/v1.2.0/parallax-protocol/advanced/networking/pip-0006",
+      "destination": "/protocol/advanced/networking/discovery",
+      "permanent": true
+    },
+    {
+      "source": "/v1.1.1/guides/mining/gpu",
+      "destination": "/hashwarp/getting-started",
+      "permanent": true
+    },
+    {
+      "source": "/v1.1.1/guides/mining/pool",
+      "destination": "/hashwarp/pool-mining",
+      "permanent": true
+    },
+    {
+      "source": "/v1.1.1/guides/mining/troubleshooting",
+      "destination": "/hashwarp/troubleshooting",
+      "permanent": true
+    },
+    {
+      "source": "/v1.1.1/guides/client/desktop",
+      "destination": "/guides/parallax-wallet/introduction",
+      "permanent": true
+    },
+    {
+      "source": "/v1.1.1/guides/wallets/hardware-wallets",
+      "destination": "/guides/parallax-wallet/hardware-wallets",
+      "permanent": true
+    },
+    {
+      "source": "/v1.1.1/parallax-protocol/advanced/networking/pip-0006",
+      "destination": "/protocol/advanced/networking/discovery",
+      "permanent": true
+    },
+    {
+      "source": "/v1.1.0/guides/mining/gpu",
+      "destination": "/hashwarp/getting-started",
+      "permanent": true
+    },
+    {
+      "source": "/v1.1.0/guides/mining/pool",
+      "destination": "/hashwarp/pool-mining",
+      "permanent": true
+    },
+    {
+      "source": "/v1.1.0/guides/mining/troubleshooting",
+      "destination": "/hashwarp/troubleshooting",
+      "permanent": true
+    },
+    {
+      "source": "/v1.1.0/guides/client/desktop",
+      "destination": "/guides/parallax-wallet/introduction",
+      "permanent": true
+    },
+    {
+      "source": "/v1.1.0/guides/wallets/hardware-wallets",
+      "destination": "/guides/parallax-wallet/hardware-wallets",
+      "permanent": true
+    },
+    {
+      "source": "/v1.1.0/parallax-protocol/advanced/networking/pip-0006",
+      "destination": "/protocol/advanced/networking/discovery",
+      "permanent": true
+    },
+    {
+      "source": "/guides/mining/gpu",
+      "destination": "/hashwarp/getting-started",
+      "permanent": true
+    },
+    {
+      "source": "/guides/mining/pool",
+      "destination": "/hashwarp/pool-mining",
+      "permanent": true
+    },
+    {
+      "source": "/guides/mining/troubleshooting",
+      "destination": "/hashwarp/troubleshooting",
+      "permanent": true
+    },
+    {
+      "source": "/guides/client/desktop",
+      "destination": "/guides/parallax-wallet/introduction",
+      "permanent": true
+    },
+    {
+      "source": "/guides/wallets/hardware-wallets",
+      "destination": "/guides/parallax-wallet/hardware-wallets",
+      "permanent": true
+    },
+    {
+      "source": "/parallax-protocol/advanced/networking/pip-0006",
+      "destination": "/protocol/advanced/networking/discovery",
+      "permanent": true
+    },
+    {
+      "source": "/v2.1.x/parallax-client/:slug*",
+      "destination": "/client/:slug*",
       "permanent": false
+    },
+    {
+      "source": "/v2.1.x/parallax-protocol/:slug*",
+      "destination": "/protocol/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/v2.1.x/guides/:slug*",
+      "destination": "/guides/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/v2.1.x/exchange-integration/:slug*",
+      "destination": "/exchange-integration/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/v2.0.x/parallax-client/:slug*",
+      "destination": "/client/:slug*",
+      "permanent": false
+    },
+    {
+      "source": "/v2.0.x/parallax-protocol/:slug*",
+      "destination": "/protocol/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/v2.0.x/guides/:slug*",
+      "destination": "/guides/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/v2.0.x/exchange-integration/:slug*",
+      "destination": "/exchange-integration/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/v1.2.x/parallax-client/:slug*",
+      "destination": "/client/v1.x/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/v1.2.x/parallax-protocol/:slug*",
+      "destination": "/protocol/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/v1.2.x/guides/:slug*",
+      "destination": "/guides/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/v1.2.x/exchange-integration/:slug*",
+      "destination": "/exchange-integration/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/v1.1.x/parallax-client/:slug*",
+      "destination": "/client/v1.x/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/v1.1.x/parallax-protocol/:slug*",
+      "destination": "/protocol/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/v1.1.x/guides/:slug*",
+      "destination": "/guides/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/v1.1.x/exchange-integration/:slug*",
+      "destination": "/exchange-integration/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/v2.1.0/parallax-client/:slug*",
+      "destination": "/client/:slug*",
+      "permanent": false
+    },
+    {
+      "source": "/v2.1.0/parallax-protocol/:slug*",
+      "destination": "/protocol/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/v2.1.0/guides/:slug*",
+      "destination": "/guides/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/v2.1.0/exchange-integration/:slug*",
+      "destination": "/exchange-integration/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/v2.0.0/parallax-client/:slug*",
+      "destination": "/client/:slug*",
+      "permanent": false
+    },
+    {
+      "source": "/v2.0.0/parallax-protocol/:slug*",
+      "destination": "/protocol/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/v2.0.0/guides/:slug*",
+      "destination": "/guides/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/v2.0.0/exchange-integration/:slug*",
+      "destination": "/exchange-integration/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/v1.2.1/parallax-client/:slug*",
+      "destination": "/client/v1.x/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/v1.2.1/parallax-protocol/:slug*",
+      "destination": "/protocol/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/v1.2.1/guides/:slug*",
+      "destination": "/guides/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/v1.2.1/exchange-integration/:slug*",
+      "destination": "/exchange-integration/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/v1.2.0/parallax-client/:slug*",
+      "destination": "/client/v1.x/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/v1.2.0/parallax-protocol/:slug*",
+      "destination": "/protocol/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/v1.2.0/guides/:slug*",
+      "destination": "/guides/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/v1.2.0/exchange-integration/:slug*",
+      "destination": "/exchange-integration/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/v1.1.1/parallax-client/:slug*",
+      "destination": "/client/v1.x/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/v1.1.1/parallax-protocol/:slug*",
+      "destination": "/protocol/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/v1.1.1/guides/:slug*",
+      "destination": "/guides/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/v1.1.1/exchange-integration/:slug*",
+      "destination": "/exchange-integration/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/v1.1.0/parallax-client/:slug*",
+      "destination": "/client/v1.x/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/v1.1.0/parallax-protocol/:slug*",
+      "destination": "/protocol/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/v1.1.0/guides/:slug*",
+      "destination": "/guides/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/v1.1.0/exchange-integration/:slug*",
+      "destination": "/exchange-integration/:slug*",
+      "permanent": true
     },
     {
       "source": "/parallax-client/:slug*",
-      "destination": "/v2.1.x/parallax-client/:slug*",
-      "permanent": false
+      "destination": "/client/:slug*",
+      "permanent": true
     },
     {
       "source": "/parallax-protocol/:slug*",
-      "destination": "/v2.1.x/parallax-protocol/:slug*",
+      "destination": "/protocol/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/client/v2.x/getting-started/introduction",
+      "destination": "/client/getting-started/introduction",
+      "permanent": false
+    },
+    {
+      "source": "/client/v2.x/getting-started/binaries",
+      "destination": "/client/getting-started/binaries",
+      "permanent": false
+    },
+    {
+      "source": "/client/v2.x/getting-started/hardware-requirements",
+      "destination": "/client/getting-started/hardware-requirements",
+      "permanent": false
+    },
+    {
+      "source": "/client/v2.x/getting-started/installing-client",
+      "destination": "/client/getting-started/installing-client",
+      "permanent": false
+    },
+    {
+      "source": "/client/v2.x/fundamentals/cli",
+      "destination": "/client/fundamentals/cli",
+      "permanent": false
+    },
+    {
+      "source": "/client/v2.x/fundamentals/daemon-mode",
+      "destination": "/client/fundamentals/daemon-mode",
+      "permanent": false
+    },
+    {
+      "source": "/client/v2.x/fundamentals/security",
+      "destination": "/client/fundamentals/security",
+      "permanent": false
+    },
+    {
+      "source": "/client/v2.x/fundamentals/sync-modes",
+      "destination": "/client/fundamentals/sync-modes",
+      "permanent": false
+    },
+    {
+      "source": "/client/v2.x/fundamentals/account-management",
+      "destination": "/client/fundamentals/account-management",
+      "permanent": false
+    },
+    {
+      "source": "/client/v2.x/fundamentals/databases",
+      "destination": "/client/fundamentals/databases",
+      "permanent": false
+    },
+    {
+      "source": "/client/v2.x/fundamentals/backup-and-restore",
+      "destination": "/client/fundamentals/backup-and-restore",
+      "permanent": false
+    },
+    {
+      "source": "/client/v2.x/fundamentals/logs",
+      "destination": "/client/fundamentals/logs",
+      "permanent": false
+    },
+    {
+      "source": "/client/v2.x/fundamentals/connecting-to-peers",
+      "destination": "/client/fundamentals/connecting-to-peers",
+      "permanent": false
+    },
+    {
+      "source": "/client/v2.x/fundamentals/tor",
+      "destination": "/client/fundamentals/tor",
+      "permanent": false
+    },
+    {
+      "source": "/client/v2.x/fundamentals/pruning",
+      "destination": "/client/fundamentals/pruning",
+      "permanent": false
+    },
+    {
+      "source": "/client/v2.x/fundamentals/private-networks",
+      "destination": "/client/fundamentals/private-networks",
+      "permanent": false
+    },
+    {
+      "source": "/client/v2.x/fundamentals/config-files",
+      "destination": "/client/fundamentals/config-files",
+      "permanent": false
+    },
+    {
+      "source": "/client/v2.x/fundamentals/versioning",
+      "destination": "/client/fundamentals/versioning",
+      "permanent": false
+    },
+    {
+      "source": "/client/v2.x/interacting-with-parallax/json-rpc-server/overview",
+      "destination": "/client/interacting-with-parallax/json-rpc-server/overview",
+      "permanent": false
+    },
+    {
+      "source": "/client/v2.x/interacting-with-parallax/json-rpc-server/batch-requests",
+      "destination": "/client/interacting-with-parallax/json-rpc-server/batch-requests",
+      "permanent": false
+    },
+    {
+      "source": "/client/v2.x/interacting-with-parallax/json-rpc-server/realtime-events",
+      "destination": "/client/interacting-with-parallax/json-rpc-server/realtime-events",
+      "permanent": false
+    },
+    {
+      "source": "/client/v2.x/interacting-with-parallax/json-rpc-namespaces/admin",
+      "destination": "/client/interacting-with-parallax/json-rpc-namespaces/admin",
+      "permanent": false
+    },
+    {
+      "source": "/client/v2.x/interacting-with-parallax/json-rpc-namespaces/clique",
+      "destination": "/client/interacting-with-parallax/json-rpc-namespaces/clique",
+      "permanent": false
+    },
+    {
+      "source": "/client/v2.x/interacting-with-parallax/json-rpc-namespaces/debug",
+      "destination": "/client/interacting-with-parallax/json-rpc-namespaces/debug",
+      "permanent": false
+    },
+    {
+      "source": "/client/v2.x/interacting-with-parallax/json-rpc-namespaces/eth",
+      "destination": "/client/interacting-with-parallax/json-rpc-namespaces/eth",
+      "permanent": false
+    },
+    {
+      "source": "/client/v2.x/interacting-with-parallax/json-rpc-namespaces/miner",
+      "destination": "/client/interacting-with-parallax/json-rpc-namespaces/miner",
+      "permanent": false
+    },
+    {
+      "source": "/client/v2.x/interacting-with-parallax/json-rpc-namespaces/net",
+      "destination": "/client/interacting-with-parallax/json-rpc-namespaces/net",
+      "permanent": false
+    },
+    {
+      "source": "/client/v2.x/interacting-with-parallax/json-rpc-namespaces/personal",
+      "destination": "/client/interacting-with-parallax/json-rpc-namespaces/personal",
+      "permanent": false
+    },
+    {
+      "source": "/client/v2.x/interacting-with-parallax/json-rpc-namespaces/txpool",
+      "destination": "/client/interacting-with-parallax/json-rpc-namespaces/txpool",
+      "permanent": false
+    },
+    {
+      "source": "/client/v2.x/interacting-with-parallax/command-line-rpc",
+      "destination": "/client/interacting-with-parallax/command-line-rpc",
+      "permanent": false
+    },
+    {
+      "source": "/client/v2.x/interacting-with-parallax/js-console",
+      "destination": "/client/interacting-with-parallax/js-console",
+      "permanent": false
+    },
+    {
+      "source": "/client/v2.x/interacting-with-parallax/js-console-contracts",
+      "destination": "/client/interacting-with-parallax/js-console-contracts",
+      "permanent": false
+    },
+    {
+      "source": "/client/v2.x/interacting-with-parallax/graph-ql-server",
+      "destination": "/client/interacting-with-parallax/graph-ql-server",
+      "permanent": false
+    },
+    {
+      "source": "/client/v2.x/developers/introduction",
+      "destination": "/client/developers/introduction",
+      "permanent": false
+    },
+    {
+      "source": "/client/v2.x/developers/dapp/developer-mode",
+      "destination": "/client/developers/dapp/developer-mode",
+      "permanent": false
+    },
+    {
+      "source": "/client/v2.x/developers/dapp/go-api",
+      "destination": "/client/developers/dapp/go-api",
+      "permanent": false
+    },
+    {
+      "source": "/client/v2.x/developers/dapp/go-account-management",
+      "destination": "/client/developers/dapp/go-account-management",
+      "permanent": false
+    },
+    {
+      "source": "/client/v2.x/developers/dapp/go-contract-bindings",
+      "destination": "/client/developers/dapp/go-contract-bindings",
+      "permanent": false
+    },
+    {
+      "source": "/client/v2.x/developers/pvm-tracing/introduction",
+      "destination": "/client/developers/pvm-tracing/introduction",
+      "permanent": false
+    },
+    {
+      "source": "/client/v2.x/developers/pvm-tracing/basic",
+      "destination": "/client/developers/pvm-tracing/basic",
+      "permanent": false
+    },
+    {
+      "source": "/client/v2.x/developers/pvm-tracing/built-in",
+      "destination": "/client/developers/pvm-tracing/built-in",
+      "permanent": false
+    },
+    {
+      "source": "/client/v2.x/developers/pvm-tracing/custom-pvm",
+      "destination": "/client/developers/pvm-tracing/custom-pvm",
+      "permanent": false
+    },
+    {
+      "source": "/client/v2.x/developers/pvm-tracing/tutorial",
+      "destination": "/client/developers/pvm-tracing/tutorial",
+      "permanent": false
+    },
+    {
+      "source": "/client/v2.x/developers/client/guide",
+      "destination": "/client/developers/client/guide",
+      "permanent": false
+    },
+    {
+      "source": "/client/v2.x/developers/client/disclosures",
+      "destination": "/client/developers/client/disclosures",
+      "permanent": false
+    },
+    {
+      "source": "/client/v2.x/developers/client/dns-disc-guide",
+      "destination": "/client/developers/client/dns-disc-guide",
+      "permanent": false
+    },
+    {
+      "source": "/client/v2.x/developers/client/code-review-guidelines",
+      "destination": "/client/developers/client/code-review-guidelines",
+      "permanent": false
+    },
+    {
+      "source": "/client/v2.x/developers/contributing",
+      "destination": "/client/developers/contributing",
+      "permanent": false
+    },
+    {
+      "source": "/client/v2.x/monitoring/creating-dashboards",
+      "destination": "/client/monitoring/creating-dashboards",
+      "permanent": false
+    },
+    {
+      "source": "/client/v2.x/monitoring/understanding-dashboards",
+      "destination": "/client/monitoring/understanding-dashboards",
+      "permanent": false
+    },
+    {
+      "source": "/client/v2.x/monitoring/metrics",
+      "destination": "/client/monitoring/metrics",
+      "permanent": false
+    },
+    {
+      "source": "/client/v2.x/tools/parallax-wallet",
+      "destination": "/client/tools/parallax-wallet",
+      "permanent": false
+    },
+    {
+      "source": "/client/v2.x/tools/clef/introduction",
+      "destination": "/client/tools/clef/introduction",
+      "permanent": false
+    },
+    {
+      "source": "/client/v2.x/tools/clef/apis",
+      "destination": "/client/tools/clef/apis",
+      "permanent": false
+    },
+    {
+      "source": "/client/v2.x/tools/clef/rules",
+      "destination": "/client/tools/clef/rules",
+      "permanent": false
+    },
+    {
+      "source": "/client/v2.x/tools/clef/setup",
+      "destination": "/client/tools/clef/setup",
+      "permanent": false
+    },
+    {
+      "source": "/client/v2.x/tools/clef/datatypes",
+      "destination": "/client/tools/clef/datatypes",
+      "permanent": false
+    },
+    {
+      "source": "/client/v2.x/tools/clef/tutorial",
+      "destination": "/client/tools/clef/tutorial",
+      "permanent": false
+    },
+    {
+      "source": "/client/v2.x/tools/clef/clique-signing",
+      "destination": "/client/tools/clef/clique-signing",
+      "permanent": false
+    },
+    {
+      "source": "/client/v2.x/tools/abi-gen",
+      "destination": "/client/tools/abi-gen",
+      "permanent": false
+    },
+    {
+      "source": "/client/v2.x/tools/devp2p",
+      "destination": "/client/tools/devp2p",
       "permanent": false
     }
   ]
